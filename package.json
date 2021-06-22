@@ -1,0 +1,38 @@
+{
+  "name": "lmsounds",
+  "version": "1.0.0",
+  "description": "Site voor LMSounds",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.2"
+  },
+  "scripts": {
+    "compile": "npx tailwindcss build -i dist/css/tailwind.css -o dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwalliedev/LMSounds.git"
+  },
+  "keywords": [
+    "dj",
+    "kempen",
+    "muziek",
+    "feesten",
+    "evenementen",
+    "trouwfeesten",
+    "verjaardagsfeesten",
+    "fuiven",
+    "festival"
+  ],
+  "author": "Kwallie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwalliedev/LMSounds/issues"
+  },
+  "homepage": "https://github.com/kwalliedev/LMSounds#readme"
+}

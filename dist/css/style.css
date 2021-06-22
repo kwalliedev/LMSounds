@@ -624,10 +624,6 @@ video {
   }
 }
 
-.active{
-    display: block;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -32232,6 +32228,10 @@ video {
 
 .content-none {
   content: none;
+}
+
+.active{
+  display: block;
 }
 
 @media (min-width: 640px) {
