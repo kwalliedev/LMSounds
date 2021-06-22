@@ -34,15 +34,19 @@
 </nav>
 <div class="">
     <div id="1" class="h-screen">
-        <h1>test1</h1>
+        <div class="pt-16">
+            <h1 class="">LMSounds</h1>
+            <h2>Muziek voor <span class="types" data-types-items="trouwfeesten!, verjaardagsfeesten!, bedrijfsfeesten!, evenementen!"></span></h2>
+        </div>
     </div>
     <div id="2" class="h-screen">
-        <h1>test2</h1>
-
+        <div class="pt-16">
+            <h1>test2</h1>
+        </div>
     </div>
 </div>
 
-
+<script src="js/type.js"></script>
 <script>
     function navToggle() {
         var btn = document.getElementById('menuBtn');
@@ -51,6 +55,19 @@
         btn.classList.toggle('open');
         nav.classList.toggle('flex');
         nav.classList.toggle('hidden');
+    }
+
+    const types = document.getElementsByClassName('types')[0];
+    if (types) {
+        let types_strings = types.getAttribute('data-types-items')
+        types_strings = types_strings.split(',')
+        new Typed('.types', {
+            strings: types_strings,
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000
+        });
     }
 </script>
 </body>

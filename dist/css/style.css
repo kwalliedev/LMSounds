@@ -32230,6 +32230,12 @@ video {
   content: none;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
 .active{
   display: block;
 }
