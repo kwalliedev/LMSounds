@@ -10,10 +10,10 @@
           href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 static">
 
 <nav id="site-menu"
-     class="z-50 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none border-t-4 border-blue-800 fixed top-0">
+     class="z-50 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none border-b-4 border-blue-800 fixed top-0">
     <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center lg:ml-2">
         <a href="#" class="no-underline py-1">
             <h1 class="font-bold text-lg tracking-widest">LMSounds</h1>
@@ -43,6 +43,54 @@
         </a>
     </div>
 </nav>
+
+<div class="fixed bottom-10 right-10 hidden md:block">
+    <div class="border-2 shadow rounded-2xl bg-blue-100 px-12 " id="streamClose">
+        <button onclick="streamClose()"
+                class="absolute -top-4 -right-4 bg-red-400 hover:bg-red-500 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="px-4 py-1">
+            <h2 class="text-2xl text-center font-bold ">Stream ons!</h2>
+        </div>
+
+        <div class="px-4 py-1">
+            <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" class="text-2xl" target="_blank">
+                <img src="./img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-12">
+            </a>
+        </div>
+        <div class="px-4 py-1">
+            <a href="https://music.apple.com/us/artist/l-marchal/1502021497" class="text-2xl" target="_blank">
+                <img src="./img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-12">
+            </a>
+        </div>
+        <div class="px-4">
+            <a href="https://www.deezer.com/nl/artist/88787692" class="text-2xl" target="_blank">
+                <img src="./img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-12">
+            </a>
+        </div>
+        <div class="px-4 py-1">
+            <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw" class="text-2xl" target="_blank">
+                <img src="./img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-12">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--<div class="fixed bottom-10 right-10 hidden md:block">-->
+<!--    <div class="border-2 shadow rounded-2xl bg-blue-100 w-72 m-auto" id="streamOpen">-->
+<!--        <button onclick="streamOpen()"-->
+<!--                class="absolute -top-4 -right-4 bg-green-400 hover:bg-green-500 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">-->
+<!--            <i class="fas fa-angle-up"></i>-->
+<!--        </button>-->
+
+<!--        <div class="px-4 py-1">-->
+<!--            <h2 class="text-2xl text-center font-bold ">Stream ons!</h2>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
 <div class="container mx-auto">
     <div id="wie" class="h-screen flex">
         <div class="m-auto">
@@ -90,6 +138,7 @@
         </div>
     </div>
 </div>
+
 <footer class="border-t-4 border-blue-900 pt-2 pb-2 px-6 bg-white">
     <div class="flex sm:flex-row flex-col justify-between items-center m-auto font-bold max-w-3xl">
         <div class="flex-col text-center">
@@ -102,7 +151,7 @@
         </div>
         <div class="flex-col text-center">
             <p class="flex-row pb-1">
-               Herentals 2200
+                Herentals 2200
             </p>
             <p class="flex-row pb-1">
                 LM-Sounds &copy; <span id="jaar"></span>
@@ -125,6 +174,18 @@
         nav.classList.toggle('flex');
         nav.classList.toggle('hidden');
     }
+
+    function streamClose() {
+        var btn = document.getElementById('streamClose');
+
+        btn.classList.toggle('hidden');
+    }
+
+    // function streamOpen() {
+    //     var btn = document.getElementById('streamOpen');
+    //
+    //     btn.classList.toggle('hidden');
+    // }
 
     document.getElementById("jaar").innerHTML = new Date().getFullYear();
 </script>
