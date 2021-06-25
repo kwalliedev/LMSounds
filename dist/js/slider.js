@@ -1,11 +1,15 @@
 new Splide('.splide', {
-    height : '28.125rem',
-    width: "50rem",
+    height : '40.501rem',
+    width: "72rem",
     cover: true,
     lazyLoad: 'sequential',
     type  : 'fade',
     rewind: true,
     breakpoints: {
+        // '2000':{
+        //     height : '19.6rem',
+        //     width: "35rem",
+        // },
         '640': {
             height : '19.6rem',
             width: "35rem",
