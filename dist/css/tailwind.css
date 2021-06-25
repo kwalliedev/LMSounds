@@ -11,3 +11,8 @@
 .active{
     display: block;
 }
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}

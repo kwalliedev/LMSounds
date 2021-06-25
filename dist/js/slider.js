@@ -1,6 +1,6 @@
 new Splide('.splide', {
-    height : '28.125rem',
-    width: "50rem",
+    height : '30rem',
+    width: "60rem",
     cover: true,
     lazyLoad: 'sequential',
     type  : 'fade',

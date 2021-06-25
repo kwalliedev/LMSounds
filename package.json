@@ -12,7 +12,7 @@
     "tailwindcss": "^2.2.2"
   },
   "scripts": {
-    "compile": "npx tailwindcss build -i dist/css/tailwind.css -o dist/css/style.css"
+    "compile": "npx tailwindcss build -i dist/assets/css/tailwind.css -o dist/assets/css/style.css"
   },
   "repository": {
     "type": "git",

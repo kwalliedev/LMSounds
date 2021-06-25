@@ -69,24 +69,52 @@
 
         </div>
     </div>
-    <div id="video" class="h-screen">
-        <div class="pt-16">
-            <h1>Video's</h1>
-            <div class="splide m-auto px-4">
-                <div class="splide__track m-auto">
-                    <ul class="splide__list">
-                        <li class="splide__slide" data-splide-html-video="assets/video/trouwfeest.mp4">
-                            <img src="assets/img/herfst.jpeg" alt="trouwfeest tumbnail">
-                        </li>
-                        <li class="splide__slide" data-splide-html-video="assets/video/bedrijfsfeest.mp4">
-                            <img src="assets/img/herfst.jpeg" alt="trouwfeest tumbnail">
-                        </li>
-                        <li class="splide__slide" data-splide-html-video="assets/video/studio.mp4">
-                            <img src="assets/img/herfst.jpeg" alt="trouwfeest tumbnail">
-                        </li>
-                    </ul>
+    <div id="video" class="h-screen ">
+        <div class="pt-16 relative">
+            <div class="p-3 gallery">
+                <div class="">
+                    <img src="assets/img/herfst.jpeg" class="w-60" alt="herfst" onclick="openModal(true, this.src, this.alt)">
+                    <img src="assets/img/herfst.jpeg" class="w-60" alt="">
+                </div>
+                <div class="lg:order-1">
+                    <div class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide" data-splide-html-video="assets/video/trouwfeest.mp4">
+                                    <img src="assets/img/herfst.jpeg" alt="trouwfeest tumbnail">
+                                </li>
+                                <li class="splide__slide" data-splide-html-video="assets/video/bedrijfsfeest.mp4">
+                                    <img src="assets/img/herfst.jpeg" alt="trouwfeest tumbnail">
+                                </li>
+                                <li class="splide__slide" data-splide-html-video="assets/video/studio.mp4">
+                                    <img src="assets/img/herfst.jpeg" alt="trouwfeest tumbnail">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div id="modal_overlay"
+             class="z-10 hidden absolute inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-10 md:pt-0">
+
+            <!-- modal -->
+            <div id="modal"
+                 class="opacity-0 transform -translate-y-full scale-150  relative w-10/12 md:w-1/2 h-1/2 md:h-3/4 bg-white rounded shadow-lg transition-opacity transition-transform duration-300">
+
+                <!-- button close -->
+                <button
+                        onclick="openModal(false)"
+                        class="absolute -top-3 -right-3 bg-red-500 hover:bg-red-600 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- body -->
+                <div class="w-full p-3">
+                    <img id="image" src="" alt="">
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -102,7 +130,7 @@
         </div>
         <div class="flex-col text-center">
             <p class="flex-row pb-1">
-               Herentals 2200
+                Herentals 2200
             </p>
             <p class="flex-row pb-1">
                 LM-Sounds &copy; <span id="jaar"></span>
@@ -116,6 +144,7 @@
 <script src="js/types.js"></script>
 <script src="js/splide.min.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/modal.js"></script>
 <script>
     function navToggle() {
         var btn = document.getElementById('menuBtn');
