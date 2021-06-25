@@ -13,7 +13,7 @@
 <body class="bg-gray-100">
 
 <nav id="site-menu"
-     class="z-50 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none border-t-4 border-blue-800 fixed top-0">
+     class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none border-t-4 border-blue-800 fixed top-0">
     <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center lg:ml-2">
         <a href="#" class="no-underline py-1">
             <h1 class="font-bold text-lg tracking-widest">LMSounds</h1>
@@ -37,14 +37,15 @@
            onclick="navToggle()">
             Contact
         </a>
-        <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2" href="#video"
+        <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2"
+           href="#gallerij"
            onclick="navToggle()">
-            Video's
+            Gallerij
         </a>
     </div>
 </nav>
 <div class="container mx-auto">
-    <div id="wie" class="h-screen flex">
+    <div id="wie" class="min-h-screen flex">
         <div class="m-auto">
             <h1 class="text-6xl lg:text-8xl">LM&dash;Sounds</h1>
             <h2 class="pl-1 lg:pl-2">Muziek voor
@@ -58,43 +59,55 @@
             </div>
         </div>
     </div>
-    <div id="wat" class="h-screen">
+    <div id="wat" class="min-h-screen border-t-4 border-black">
         <div class="pt-16">
             <h1>test2</h1>
         </div>
     </div>
+
     <div id="contact" class="h-screen">
         <div class="pt-16">
             <h1>Contacteer ons!</h1>
 
         </div>
     </div>
-    <div id="video" class="h-screen ">
+
+    <div id="gallerij" class="min-h-screen mb-16">
         <div class="pt-16">
-            <div class="p-3 gallery">
-                <div class="box1">
-                    <div class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide" data-splide-html-video="assets/video/trouwfeest.mp4">
-                                    <img src="assets/img/herfst.jpeg" alt="trouwfeest tumbnail">
-                                </li>
-                                <li class="splide__slide" data-splide-html-video="assets/video/bedrijfsfeest.mp4">
-                                    <img src="assets/img/herfst.jpeg" alt="trouwfeest tumbnail">
-                                </li>
-                                <li class="splide__slide" data-splide-html-video="assets/video/studio.mp4">
-                                    <img src="assets/img/herfst.jpeg" alt="trouwfeest tumbnail">
-                                </li>
-                            </ul>
-                        </div>
+            <div class="p-3 w-full block">
+                <div class="splide mx-2 md:mx-auto">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide" data-splide-html-video="assets/video/trouwfeest.mp4">
+                                <img src="assets/img/herfst.jpeg" alt="Trouwfeest tumbnail">
+                            </li>
+                            <li class="splide__slide" data-splide-html-video="assets/video/bedrijfsfeest.mp4">
+                                <img src="assets/img/herfst.jpeg" alt="Bedrijfsfeest tumbnail">
+                            </li>
+                            <li class="splide__slide" data-splide-html-video="assets/video/studio.mp4">
+                                <img src="assets/img/herfst.jpeg" alt="Studio tumbnail">
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                    <img src="assets/img/herfst.jpeg" alt="herfst" onclick="openModal(true, this.src, this.alt)">
-                    <img src="assets/img/herfst.jpeg" alt="">
+                <div class="mx-2 md:mx-auto pt-4 xl:pt-0 flex flex-wrap justify-center max-w-6xl 3xl:max-w-full">
+                    <img src="assets/img/herfst.jpeg" class="pb-4 mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1" alt="herfst"
+                         onclick="openModal(true, this.src, this.alt)">
+                    <img src="assets/img/herfst.jpeg" class="pb-4 ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1" alt="herfst"
+                         onclick="openModal(true, this.src, this.alt)">
+                    <img src="assets/img/herfst.jpeg" class="pb-4 mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1" alt="herfst"
+                         onclick="openModal(true, this.src, this.alt)">
+                    <img src="assets/img/herfst.jpeg" class="pb-4 ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1" alt="herfst"
+                         onclick="openModal(true, this.src, this.alt)">
+                    <img src="assets/img/herfst.jpeg" class="pb-4 mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1" alt="herfst"
+                         onclick="openModal(true, this.src, this.alt)">
+                    <img src="assets/img/herfst.jpeg" class="pb-4 ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1" alt="herfst"
+                         onclick="openModal(true, this.src, this.alt)">
+                </div>
             </div>
         </div>
         <div id="modal_overlay"
-             class="z-10 hidden absolute inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-10 md:pt-0">
+             class="z-50 hidden fixed inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-20 md:pt-10 md:pt-0">
 
             <!-- modal -->
             <div id="modal"
@@ -116,6 +129,7 @@
         </div>
     </div>
 </div>
+
 <footer class="border-t-4 border-blue-900 pt-2 pb-2 px-6 bg-white">
     <div class="flex sm:flex-row flex-col justify-between items-center m-auto font-bold max-w-3xl">
         <div class="flex-col text-center">

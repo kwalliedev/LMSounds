@@ -32230,19 +32230,6 @@ video {
   display: block;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 100px;
-}
-
-.box1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -188057,5 +188044,4 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
 
