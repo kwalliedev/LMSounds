@@ -41,7 +41,7 @@
     </div>
 </nav>
 
-<div class="fixed bottom-10 right-10 hidden md:block">
+<div class="z-10 fixed bottom-10 right-10 hidden md:block">
     <div class="shadow-2xl rounded-2xl bg-blue-100 px-12">
         <button onclick="streamToggle()" id="streamToggle"
                 class="absolute -top-4 -right-4 bg-red-400 hover:bg-red-500 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
@@ -69,7 +69,7 @@
                 </a>
             </div>
             <div class="px-3 py-1">
-                <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw"  target="_blank">
+                <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw" target="_blank">
                     <img src="./img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-10 m-auto">
                 </a>
             </div>
@@ -141,10 +141,48 @@
         </div>
     </div>
 
-    <div id="contact" class="h-screen">
-        <div class="pt-16">
-            <h1>Contacteer ons!</h1>
+    <div id="contact" class="min-h-screen flex">
+        <div class="pt-16 m-auto w-10/12 md:w-1/2">
+            <form action="form.php" method="post" class="m-auto">
+                <div>
+                    <label for="naam" class="text-gray-700">Naam</label>
+                    <input type="text" id="naam" name="naam"
+                           class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"
+                           placeholder="Jan Janssens">
+                </div>
 
+                <div class="mt-6">
+                    <label for="email" class="text-gray-700">E-mail</label>
+                    <input type="text" id="email" name="email"
+                           class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"
+                           placeholder="jan.janssens@telenet.be"
+                           pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
+                </div>
+
+                <div class="mt-6">
+                    <label for="onderwerp" class="text-gray-700">Onderwerp</label>
+                    <select name="onderwerp" id="onderwerp"
+                            class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out">
+                        <option value="BoekingOptreden">Boeking optreden</option>
+                        <option value="BroekingStudio">Boeking studio</option>
+                        <option value="Vraag">Algemene vraag</option>
+                    </select>
+
+                </div>
+
+                <div class="mt-6">
+                    <label for="bericht" class="text-gray-700">Uw bericht</label>
+                    <textarea id="bericht" rows="5"
+                           class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out">
+                    </textarea>
+                </div>
+
+                <div class="mt-6 text-right">
+                    <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-xl focus:outline-none">
+                        Verstuur
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -266,16 +304,15 @@
             btn.children.item(0).classList.replace('fa-times', 'fa-chevron-up');
             btn.classList.replace('bg-red-400', 'bg-green-400');
             btn.classList.replace('hover:bg-red-500', 'hover:bg-green-500');
-        }
-        else {
+        } else {
             btn.children.item(0).classList.replace('fa-chevron-up', 'fa-times');
             btn.classList.replace('bg-green-400', 'bg-red-400');
             btn.classList.replace('hover:bg-green-500', 'hover:bg-red-500');
         }
     }
 
-    document.onkeydown= function (e){
-        if (e.key === "Escape" || e.key === "Backspace"){
+    document.onkeydown = function (e) {
+        if (e.key === "Escape" || e.key === "Backspace") {
             openModal(false);
         }
     }
