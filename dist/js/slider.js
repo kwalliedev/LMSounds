@@ -6,6 +6,10 @@ new Splide('.splide', {
     type  : 'fade',
     rewind: true,
     breakpoints: {
+        // '2000':{
+        //     height : '19.6rem',
+        //     width: "35rem",
+        // },
         '640': {
             height : '19.6rem',
             width: "35rem",
