@@ -63,7 +63,7 @@
                 <div class="w-full lg:w-96 lg:w-1/3 lg:border-2 lg:relative lg:top-1/2 lg:transform lg:-translate-x-20 lg:translate-y-1/4 xl:translate-y-3/4 rounded-xl lg:border-blue-900 lg:h-72 lg:bg-opacity-90 lg:bg-white">
                     <h1 class="text-center text-3xl pt-2">DJ LM&amp;JP</h1>
 
-                    <p class="p-2 pb-2 lg:pb-10 lg:relative lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-36 xl:-translate-y-2/3 text-justify">
+                    <p class="p-2 pb-2 lg:pb-10 lg:relative lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-36 xl:-translate-y-2/3 text-justify">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquam, aliquid
                         amet autem cum deserunt eligendi eveniet fugit illo ipsum iste iusto laboriosam molestiae
                         nesciunt nobis nulla obcaecati officia quae qui recusandae reiciendis suscipit temporibus ullam
@@ -78,8 +78,6 @@
                 <div class="block lg:hidden mt-2 mx-auto rounded text-center">
                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl">
                         Boek nu!
-                        <i class="fas fa-chevron-down pt-2 animate-bounce"></i>
-
                     </button>
                 </div>
             </div>
@@ -113,34 +111,34 @@
                     </div>
                 </div>
                 <div class="mx-2 md:mx-auto pt-4 xl:pt-0 flex flex-wrap justify-center max-w-6xl 3xl:max-w-full">
-                    <img src="assets/img/herfst.jpeg" class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1"
+                    <img src="assets/img/herfst.jpeg" class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
                          alt="herfst"
                          data-uitleg="test foto1"
                          onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    <img src="assets/img/herfst.jpeg" class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1"
+                    <img src="assets/img/herfst.jpeg" class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
                          alt="herfst"
                          data-uitleg="test foto2"
                          onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    <img src="assets/img/herfst.jpeg" class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1"
+                    <img src="assets/img/herfst.jpeg" class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
                          alt="herfst"
                          data-uitleg="test foto3"
                          onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    <img src="assets/img/herfst.jpeg" class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1"
+                    <img src="assets/img/herfst.jpeg" class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
                          alt="herfst"
                          data-uitleg="test foto4"
                          onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    <img src="assets/img/herfst.jpeg" class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1"
+                    <img src="assets/img/herfst.jpeg" class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
                          alt="herfst"
                          data-uitleg="test foto5"
                          onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    <img src="assets/img/herfst.jpeg" class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1"
+                    <img src="assets/img/herfst.jpeg" class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
                          alt="herfst"
                          data-uitleg="test foto6"
                          onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
                 </div>
             </div>
         </div>
-        <div id="modal_overlay"
+        <div id="modal_overlay" onclick="openModal(false)"
              class="z-50 hidden fixed inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-20 md:pt-10 md:pt-0">
 
             <!-- modal -->
@@ -200,6 +198,12 @@
         btn.classList.toggle('open');
         nav.classList.toggle('flex');
         nav.classList.toggle('hidden');
+    }
+
+    document.onkeydown= function (e){
+        if (e.key === "Escape" || e.key === "Backspace"){
+            openModal(false);
+        }
     }
 
     document.getElementById("jaar").innerHTML = new Date().getFullYear();
