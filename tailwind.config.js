@@ -6,6 +6,9 @@ module.exports = {
             screens: {
                 '3xl': '2000px',
             },
+            animation: {
+                'bounce': 'bounce 3s infinite',
+            }
         },
     },
     variants: {
