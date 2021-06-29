@@ -8,7 +8,10 @@ module.exports = {
             },
             animation: {
                 'bounce': 'bounce 2s infinite',
-            }
+            },
+            backgroundImage: theme => ({
+                'home': "url('../assets/img/bubble.jpg')",
+            }),
         },
     },
     variants: {
