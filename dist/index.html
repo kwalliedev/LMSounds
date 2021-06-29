@@ -45,51 +45,40 @@
 </nav>
 
 <div class="fixed bottom-10 right-10 hidden md:block">
-    <div class="border-2 shadow rounded-2xl bg-blue-100 px-12 " id="streamClose">
-        <button onclick="streamClose()"
+    <div class="shadow-2xl rounded-2xl bg-blue-100 px-12">
+        <button onclick="streamToggle()" id="streamToggle"
                 class="absolute -top-4 -right-4 bg-red-400 hover:bg-red-500 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
             <i class="fas fa-times"></i>
         </button>
 
         <div class="px-4 py-1">
-            <h2 class="text-2xl text-center font-bold ">Stream ons!</h2>
+            <h2 class="text-2xl text-center font-bold">Stream ons!</h2>
         </div>
 
-        <div class="px-4 py-1">
-            <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" class="text-2xl" target="_blank">
-                <img src="./img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-12">
-            </a>
-        </div>
-        <div class="px-4 py-1">
-            <a href="https://music.apple.com/us/artist/l-marchal/1502021497" class="text-2xl" target="_blank">
-                <img src="./img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-12">
-            </a>
-        </div>
-        <div class="px-4">
-            <a href="https://www.deezer.com/nl/artist/88787692" class="text-2xl" target="_blank">
-                <img src="./img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-12">
-            </a>
-        </div>
-        <div class="px-4 py-1">
-            <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw" class="text-2xl" target="_blank">
-                <img src="./img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-12">
-            </a>
+        <div id="streamContent" class="transition duration-500 ease-in-out">
+            <div class="px-3 py-1 ">
+                <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="_blank">
+                    <img src="./img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-10 m-auto">
+                </a>
+            </div>
+            <div class="px-3 py-1">
+                <a href="https://music.apple.com/us/artist/l-marchal/1502021497" target="_blank">
+                    <img src="./img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-10 m-auto">
+                </a>
+            </div>
+            <div class="px-3">
+                <a href="https://www.deezer.com/nl/artist/88787692" target="_blank">
+                    <img src="./img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-10 m-auto">
+                </a>
+            </div>
+            <div class="px-3 py-1">
+                <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw"  target="_blank">
+                    <img src="./img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-10 m-auto">
+                </a>
+            </div>
         </div>
     </div>
 </div>
-
-<!--<div class="fixed bottom-10 right-10 hidden md:block">-->
-<!--    <div class="border-2 shadow rounded-2xl bg-blue-100 w-72 m-auto" id="streamOpen">-->
-<!--        <button onclick="streamOpen()"-->
-<!--                class="absolute -top-4 -right-4 bg-green-400 hover:bg-green-500 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">-->
-<!--            <i class="fas fa-angle-up"></i>-->
-<!--        </button>-->
-
-<!--        <div class="px-4 py-1">-->
-<!--            <h2 class="text-2xl text-center font-bold ">Stream ons!</h2>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 
 <div class="container mx-auto">
     <div id="wie" class="h-screen flex">
@@ -175,17 +164,24 @@
         nav.classList.toggle('hidden');
     }
 
-    function streamClose() {
-        var btn = document.getElementById('streamClose');
+    function streamToggle() {
+        var btn = document.getElementById('streamToggle');
+        var content = document.getElementById('streamContent');
 
-        btn.classList.toggle('hidden');
+        content.classList.toggle('hidden');
+
+        if (content.classList.contains('hidden')) {
+            btn.children.item(0).classList.replace('fa-times', 'fa-chevron-up');
+            btn.classList.replace('bg-red-400', 'bg-green-400');
+            btn.classList.replace('hover:bg-red-500', 'hover:bg-green-500');
+        }
+        else {
+            btn.children.item(0).classList.replace('fa-chevron-up', 'fa-times');
+            btn.classList.replace('bg-green-400', 'bg-red-400');
+            btn.classList.replace('hover:bg-green-500', 'hover:bg-red-500');
+        }
     }
 
-    // function streamOpen() {
-    //     var btn = document.getElementById('streamOpen');
-    //
-    //     btn.classList.toggle('hidden');
-    // }
 
     document.getElementById("jaar").innerHTML = new Date().getFullYear();
 </script>
