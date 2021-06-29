@@ -78,7 +78,7 @@
                 <div class="block lg:hidden mt-2 mx-auto rounded text-center">
                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl">
                         Boek nu!
-                        <i class="fas fa-chevron-down pt-2 block animate-bounce"></i>
+                        <i class="fas fa-chevron-down pt-2 animate-bounce"></i>
 
                     </button>
                 </div>
@@ -127,7 +127,7 @@
                          onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
                     <img src="assets/img/herfst.jpeg" class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1"
                          alt="herfst"
-                         data-uitleg="test foto14"
+                         data-uitleg="test foto4"
                          onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
                     <img src="assets/img/herfst.jpeg" class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1"
                          alt="herfst"
@@ -145,7 +145,7 @@
 
             <!-- modal -->
             <div id="modal"
-                 class="opacity-0 transform -translate-y-full scale-150  relative w-10/12 md:w-1/2 bg-white rounded shadow-lg transition-opacity transition-transform duration-300">
+                 class="opacity-0 top-1/2 transform -translate-y-2/3 scale-150  relative w-10/12 md:w-1/2 bg-white rounded shadow-lg transition-opacity transition-transform duration-300">
 
                 <!-- button close -->
                 <button
@@ -155,9 +155,9 @@
                 </button>
 
                 <!-- body -->
-                <div class="w-full p-3">
+                <div class="w-full p-0 rounded-xl">
                     <img id="image" src="" alt="">
-                    <p id="tekst" class="mt-4 mb-4"></p>
+                    <p id="tekst" class="mt-4 ml-2 mb-4"></p>
                 </div>
             </div>
 
