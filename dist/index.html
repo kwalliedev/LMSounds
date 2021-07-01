@@ -3,7 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kwallie">
+    <meta name="keywords"
+          content="LM-Sounds, Kempen, DJ's boeken, Muziekproducer, Artiesten boeken, Live act's, Muziek voor feesten, Producing"/>
+    <meta name="description"
+          content="Zoek je een nog een DJ voor je feest? Dan kan LM-Sounds helpen. Wij bieden DJ's aangepast aan jou wensen. Of wil je je eigen plaat opnemen, want dit kan ook in onze professionele opnamestudio!">
+    <meta name="robots" content="index,follow">
+
+    //og
+    <meta property="og:locale" content="nl_BE">
+    <meta property="og:site_name" content="LM-Sounds DJ Kempen">
+    <meta property="og:title" content="LM-Sounds"/>
+    <meta property="og:description"
+          content="Zoek je een nog een DJ voor je feest? Dan kan LM-Sounds helpen. Wij bieden DJ's aangepast aan jou wensen. Of wil je je eigen plaat opnemen, want dit kan ook in onze professionele opnamestudio!">
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.lm-sounds.com"/>
+    <meta property="og:image" content="https://www.lm-sounds.com/assets/img/logo.IDK"/>
+    //fix type
+    <meta property="og:image:type" content="image/IDK"/>
+    // fix type
+    <meta property="og:image:width" content="400"/>
+    <meta property="og:image:height" content="300"/>
+    <meta property="og:image:alt" content="Logo van LM-Sounds"/>
+
+    //Twitter
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.lm-sounds.com">
+    <meta property="twitter:title" content="LM-Sounds DJ Kempen">
+    <meta property="twitter:description"
+          content="Zoek je een nog een DJ voor je feest? Dan kan LM-Sounds helpen. Wij bieden DJ's aangepast aan jou wensen. Of wil je je eigen plaat opnemen, want dit kan ook in onze professionele opnamestudio!">
+    <meta property="twitter:image" content="https://www.lm-sounds.com/assets/img/logo.IDK">
+    //fix type
+
     <title>LMSounds</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet"
@@ -51,8 +84,8 @@
                               data-types-items="trouwfeesten!, verjaardagsfeesten!, bedrijfsfeesten!, evenementen!"></span>
                     </h2>
                     <div class="text-center mt-10">
-                        <a href="#wie">
-                            <i class="fas fa-chevron-down"></i>
+                        <a href="#wie" class="p-4">
+                            <i class="fas fa-chevron-down fa-2x"></i>
                         </a>
                     </div>
                 </div>
@@ -66,7 +99,7 @@
             <div class="flex flex-wrap mb-4">
                 <img src="assets/img/herfst.jpeg" class="w-72 md:w-96 flex-1 pb-4 lg:pb-0" alt="">
                 <div class="w-full lg:w-96 lg:w-1/3 lg:shadow-2xl lg:relative lg:top-1/2 lg:transform lg:-translate-x-20 lg:translate-y-1/4 xl:translate-y-3/4 2xl:translate-y-full rounded-xl lg:border-blue-900 lg:h-72 lg:bg-opacity-90 lg:bg-white">
-                    <h1 class="text-center text-3xl pt-4 font-semibold">DJ LM&amp;JP</h1>
+                    <h1 class="text-center text-3xl pt-4 font-semibold mb-3">DJ LM&amp;JP</h1>
 
                     <p class="px-8 pb-2 lg:pb-10 lg:relative lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-36 xl:-translate-y-2/3 text-justify">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquam,
@@ -79,14 +112,14 @@
 
                     <button class="absolute hidden lg:block -bottom-5 left-1/2 transform lg:-translate-x-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none">
                         Boek nu!
-                        <i class="fas fa-chevron-down ml-2 animate-bounce"></i>
+                        <i class="fas fa-chevron-down ml-2 animate-bounce relative top-0.5"></i>
                     </button>
                 </div>
             </div>
 
             <div class="block lg:flex lg:flex-wrap">
                 <div class="w-full lg:w-96 lg:w-1/3 lg:shadow-2xl lg:relative lg:top-1/2 lg:transform lg:translate-x-20 lg:translate-y-1/4 xl:translate-y-3/4 2xl:translate-y-full rounded-xl lg:border-blue-900 lg:h-72 lg:bg-opacity-90 lg:bg-white">
-                    <h1 class="text-center text-3xl pt-4 font-semibold">Dante</h1>
+                    <h1 class="text-center text-3xl pt-4 font-semibold mb-3">Dant&eacute;</h1>
 
                     <p class="px-8 pb-2 lg:pb-10 lg:relative lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-36 xl:-translate-y-2/3 text-justify">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquam,
@@ -99,7 +132,7 @@
 
                     <button class="absolute hidden lg:block -bottom-5 left-1/2 transform lg:-translate-x-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none">
                         Boek nu!
-                        <i class="fas fa-chevron-down ml-2 animate-bounce"></i>
+                        <i class="fas fa-chevron-down ml-2 animate-bounce relative top-0.5"></i>
                     </button>
                 </div>
                 <div class="block lg:hidden mt-2 mx-auto rounded text-center mb-4">
@@ -239,22 +272,28 @@
 </div>
 
 <footer class="border-t-4 border-blue-900 pt-2 pb-2 px-6 bg-white">
-    <div class="flex sm:flex-row flex-col justify-between items-center m-auto font-bold max-w-3xl">
-        <div class="flex-col text-center">
-            <a href="tel:+32 476 743 771" class="flex-row block pb-1">
+    <div class="mx-auto font-bold text-center">
+        <div>
+            <a href="tel:+32 476 743 771" class="m-0 sm:mr-2 md:mr-3">
                 <i class="fas fa-phone-alt mr-1"></i>+32 476 743 771
             </a>
-            <a href="mailto:info@lm-sounds.com" class="flex-row block pb-1">
+            <br class="block sm:hidden">
+            <span class="hidden sm:inline-block">
+                &bull;
+            </span>
+            <a href="mailto:info@lm-sounds.com" class="m-0 sm:ml-2 sm:mr-2 md:ml-3 md:mr-3">
                 <i class="fas fa-envelope mr-1"></i>info@lm-sounds.com
             </a>
-        </div>
-        <div class="flex-col text-center">
-            <p class="flex-row pb-1">
+            <br class="block sm:hidden">
+            <span class="hidden sm:inline-block">
+                &bull;
+            </span>
+            <span class="m-0 sm:ml-2 md:ml-3">
                 Herentals 2200
-            </p>
-            <p class="flex-row pb-1">
-                LM-Sounds &copy; <span id="jaar"></span>
-            </p>
+            </span>
+        </div>
+        <div class="font-medium text-sm">
+            &copy; <span id="jaar"></span> LMSounds
         </div>
     </div>
 </footer>
@@ -262,9 +301,9 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video/dist/js/splide-extension-video.min.js"></script>
 <script src="js/type.js"></script>
 <script src="js/types.js"></script>
-<script src="js/splide.min.js"></script>
-<script src="js/slider.js"></script>
-<script src="js/modal.js"></script>
+<script defer src="js/splide.min.js"></script>
+<script defer src="js/slider.js"></script>
+<script defer src="js/modal.js"></script>
 <script>
     function navToggle() {
         var btn = document.getElementById('menuBtn');
@@ -273,12 +312,6 @@
         btn.classList.toggle('open');
         nav.classList.toggle('flex');
         nav.classList.toggle('hidden');
-    }
-
-    document.onkeydown = function (e) {
-        if (e.key === "Escape" || e.key === "Backspace") {
-            openModal(false);
-        }
     }
 
     document.getElementById("jaar").innerHTML = new Date().getFullYear();

@@ -1,3 +1,4 @@
+//video carrousel
 new Splide('.splide', {
     height : '47.814rem',
     width: "85rem",
