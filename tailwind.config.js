@@ -11,7 +11,7 @@ module.exports = {
             },
             colors: {
                 gray: {
-                    250: 'rgba(221,221,221,0.92)'
+                    250: 'rgba(245,245,245,0.92)'
                 }
             },
             backgroundImage: theme => ({
