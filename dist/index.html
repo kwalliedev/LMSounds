@@ -44,15 +44,15 @@
 <div class="z-10 fixed bottom-10 right-10 hidden md:block">
     <div class="shadow-2xl rounded-2xl bg-blue-100 px-12">
         <button onclick="streamToggle()" id="streamToggle"
-                class="absolute -top-4 -right-4 bg-red-400 hover:bg-red-500 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
-            <i class="fas fa-times"></i>
+                class="absolute -top-5 -right-5 bg-red-400 hover:bg-red-500 text-2xl w-12 h-12 rounded-full focus:outline-none text-white">
+            <i class="fas fa-times text-4xl"></i>
         </button>
 
-        <div class="px-4 py-1">
-            <h2 class="text-2xl text-center font-bold">Stream ons!</h2>
-        </div>
-
         <div id="streamContent" class="transition duration-500 ease-in-out">
+            <div class="px-4 py-1">
+                <h2 class="text-2xl text-center font-bold">Stream ons!</h2>
+            </div>
+
             <div class="px-3 py-1 ">
                 <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="_blank">
                     <img src="./img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-10 m-auto">
@@ -145,14 +145,14 @@
         <div class="pt-16 m-auto w-10/12 md:w-1/2">
             <form action="form.php" method="post" class="m-auto">
                 <div>
-                    <label for="naam" class="text-gray-700">Naam</label>
+                    <label for="naam" class="text-gray-700 font-semibold">Naam</label>
                     <input type="text" id="naam" name="naam"
                            class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"
                            placeholder="Jan Janssens">
                 </div>
 
                 <div class="mt-6">
-                    <label for="email" class="text-gray-700">E-mail</label>
+                    <label for="email" class="text-gray-700 font-semibold">E-mail</label>
                     <input type="email" id="email" name="email"
                            class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"
                            placeholder="jan.janssens@telenet.be"
@@ -160,7 +160,7 @@
                 </div>
 
                 <div class="mt-6">
-                    <label for="onderwerp" class="text-gray-700">Onderwerp</label>
+                    <label for="onderwerp" class="text-gray-700 font-semibold">Onderwerp</label>
                     <select name="onderwerp" id="onderwerp"
                             class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out">
                         <option value="BoekingOptreden">Boeking optreden</option>
@@ -170,10 +170,9 @@
                 </div>
 
                 <div class="mt-6">
-                    <label for="bericht" class="text-gray-700">Uw bericht</label>
+                    <label for="bericht" class="text-gray-700 font-semibold">Uw bericht</label>
                     <textarea id="bericht" rows="3"
-                           class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out">
-                    </textarea>
+                           class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"></textarea>
                 </div>
 
                 <div class="mt-6 text-right">
@@ -300,11 +299,11 @@
         content.classList.toggle('hidden');
 
         if (content.classList.contains('hidden')) {
-            btn.children.item(0).classList.replace('fa-times', 'fa-chevron-up');
+            btn.children.item(0).classList.replace('fa-times', 'fa-headphones');
             btn.classList.replace('bg-red-400', 'bg-green-400');
             btn.classList.replace('hover:bg-red-500', 'hover:bg-green-500');
         } else {
-            btn.children.item(0).classList.replace('fa-chevron-up', 'fa-times');
+            btn.children.item(0).classList.replace('fa-headphones', 'fa-times');
             btn.classList.replace('bg-green-400', 'bg-red-400');
             btn.classList.replace('hover:bg-green-500', 'hover:bg-red-500');
         }
