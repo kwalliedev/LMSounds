@@ -13,7 +13,11 @@ module.exports = {
                 gray: {
                     250: 'rgba(221,221,221,0.92)'
                 }
-            }
+            },
+            backgroundImage: theme => ({
+                'home': "url('../assets/img/bubble.jpg')",
+            }),
+
         },
     },
     variants: {
