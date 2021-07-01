@@ -74,7 +74,7 @@
     </div>
 </nav>
 
-  <div class="z-10 fixed bottom-10 right-10 hidden md:block">
+<div class="z-10 fixed bottom-10 right-10 hidden md:block">
 
     <div class="shadow-2xl rounded-2xl bg-blue-100 px-12">
         <button onclick="streamToggle()" id="streamToggle"
@@ -110,9 +110,8 @@
         </div>
     </div>
 </div>
-
-<div class="bg-home bg-center bg-cover bg-fixed bg-no-repeat">
-    <section class="container mx-auto">
+<section class="bg-home bg-center bg-cover bg-fixed bg-no-repeat">
+    <div class="container mx-auto">
         <div class="min-h-screen">
             <div id="head" class="sticky top-1/4">
                 <div class="text-center pb-5">
@@ -129,8 +128,9 @@
                 </div>
             </div>
         </div>
-     </section>
-</div>
+    </div>
+</section>
+
 <section class="container mx-auto">
     <div id="wie" class="min-h-screen">
         <div class="pt-36 mx-4">
@@ -138,7 +138,6 @@
                 <img src="assets/img/herfst.jpeg" class="w-72 md:w-96 flex-1 pb-4 lg:pb-0" alt="">
                 <div class="w-full lg:w-96 lg:w-1/3 lg:shadow-2xl lg:relative lg:top-1/2 lg:transform lg:-translate-x-20 lg:translate-y-1/4 xl:translate-y-3/4 2xl:translate-y-full rounded-xl lg:border-blue-900 lg:h-72 lg:bg-gray-250">
                     <h1 class="text-center text-3xl pt-4 font-semibold">DJ LM&amp;JP</h1>
-
 
                     <p class="px-8 pb-2 lg:pb-10 lg:relative lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-36 xl:-translate-y-2/3 text-justify">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquam,
@@ -149,11 +148,11 @@
                         vitae, voluptate voluptates!
                     </p>
 
-                    <a href="#contact" class="absolute hidden lg:block -bottom-5 left-1/2 transform lg:-translate-x-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none">
+                    <a href="#contact"
+                       class="absolute hidden lg:block -bottom-5 left-1/2 transform lg:-translate-x-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none">
                         Boek nu!
                         <i class="fas fa-chevron-down ml-2 animate-bounce relative top-0.5"></i>
                     </a>
-
                 </div>
             </div>
 
@@ -170,7 +169,8 @@
                         vitae, voluptate voluptates!
                     </p>
 
-                    <a href="#contact" class="absolute hidden lg:block -bottom-5 left-1/2 transform lg:-translate-x-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none">
+                    <a href="#contact"
+                       class="absolute hidden lg:block -bottom-5 left-1/2 transform lg:-translate-x-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none">
                         Boek nu!
                         <i class="fas fa-chevron-down ml-2 animate-bounce relative top-0.5"></i>
                     </a>
@@ -187,7 +187,7 @@
         </div>
     </div>
 </section>
-</div>
+<section>
     <div id="contact" class="min-h-screen flex">
         <div class="pt-16 m-auto w-10/12 md:w-1/2">
             <form action="form.php" method="post" class="m-auto">
@@ -219,7 +219,7 @@
                 <div class="mt-6">
                     <label for="bericht" class="text-gray-700 font-semibold">Uw bericht</label>
                     <textarea id="bericht" rows="3"
-                           class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"></textarea>
+                              class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"></textarea>
                 </div>
 
                 <div class="mt-6 text-right">
@@ -230,123 +230,121 @@
             </form>
         </div>
     </div>
-</div>
+</section>
 
-<div>
-    <section class="container mx-auto">
-        <div id="gallerij" class="min-h-screen mb-16">
-            <div class="pt-16">
-                <div class="p-3 w-full block">
-                    <div class="splide mx-2 md:mx-auto">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide" data-splide-html-video="assets/video/trouwfeest.mp4">
-                                    <img src="assets/img/herfst.jpeg" alt="Trouwfeest tumbnail">
-                                </li>
-                                <li class="splide__slide" data-splide-html-video="assets/video/bedrijfsfeest.mp4">
-                                    <img src="assets/img/herfst.jpeg" alt="Bedrijfsfeest tumbnail">
-                                </li>
-                                <li class="splide__slide" data-splide-html-video="assets/video/studio.mp4">
-                                    <img src="assets/img/herfst.jpeg" alt="Studio tumbnail">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="grid grid-cols-3">
-                        <img src="assets/img/herfst.jpeg"
-                             class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
-                             alt="herfst"
-                             data-uitleg="test foto1"
-                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                        <img src="assets/img/herfst.jpeg"
-                             class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
-                             alt="herfst"
-                             data-uitleg="test foto2"
-                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                        <img src="assets/img/herfst.jpeg"
-                             class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
-                             alt="herfst"
-                             data-uitleg="test foto3"
-                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    </div>
-                    <div class="grid grid-cols-3 text-center">
-                        <img src="assets/img/herfst.jpeg"
-                             class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
-                             alt="herfst"
-                             data-uitleg=" foto4"
-                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                        <img src="assets/img/herfst.jpeg"
-                             class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
-                             alt="herfst"
-                             data-uitleg="test foto5"
-                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                        <img src="assets/img/herfst.jpeg"
-                             class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
-                             alt="herfst"
-                             data-uitleg="test foto6"
-                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    </div>
-                    <!--                    <div class="mx-2 md:mx-auto pt-4 xl:pt-0 flex flex-wrap justify-center max-w-7xl 3xl:max-w-full">-->
-                    <!--                        <img src="assets/img/herfst.jpeg"-->
-                    <!--                             class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer hover:scale-50"-->
-                    <!--                             alt="herfst"-->
-                    <!--                             data-uitleg="test foto1"-->
-                    <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
-                    <!--                        <img src="assets/img/herfst.jpeg"-->
-                    <!--                             class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"-->
-                    <!--                             alt="herfst"-->
-                    <!--                             data-uitleg="test foto2"-->
-                    <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
-                    <!--                        <img src="assets/img/herfst.jpeg"-->
-                    <!--                             class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"-->
-                    <!--                             alt="herfst"-->
-                    <!--                             data-uitleg="test foto3"-->
-                    <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
-                    <!--                        <img src="assets/img/herfst.jpeg"-->
-                    <!--                             class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"-->
-                    <!--                             alt="herfst"-->
-                    <!--                             data-uitleg=" foto4"-->
-                    <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
-                    <!--                        <img src="assets/img/herfst.jpeg"-->
-                    <!--                             class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"-->
-                    <!--                             alt="herfst"-->
-                    <!--                             data-uitleg="test foto5"-->
-                    <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
-                    <!--                        <img src="assets/img/herfst.jpeg"-->
-                    <!--                             class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"-->
-                    <!--                             alt="herfst"-->
-                    <!--                             data-uitleg="test foto6"-->
-                    <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
-                    <!--                    </div>-->
-                </div>
-            </div>
-            <div id="modal_overlay" onclick="openModal(false)"
-                 class="z-50 hidden fixed inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-20 md:pt-10 md:pt-0">
-
-                <!-- modal -->
-                <div id="modal"
-                     class="opacity-0 top-1/2 transform -translate-y-2/3 scale-150  relative w-10/12 md:w-1/2 bg-white rounded shadow-lg transition-opacity transition-transform duration-300">
-
-                    <!-- button close -->
-                    <button
-                            onclick="openModal(false)"
-                            class="absolute -top-3 -right-3 bg-red-500 hover:bg-red-600 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
-                        <i class="fas fa-times"></i>
-                    </button>
-
-                    <!-- body -->
-                    <div class="w-full p-0 rounded-xl">
-                        <img id="image" src="" alt="">
-                        <p id="tekst" class="mt-4 ml-2 mb-4"></p>
+<section class="container mx-auto">
+    <div id="gallerij" class="min-h-screen mb-16">
+        <div class="pt-16">
+            <div class="p-3 w-full block">
+                <div class="splide mx-2 md:mx-auto">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide" data-splide-html-video="assets/video/trouwfeest.mp4">
+                                <img src="assets/img/herfst.jpeg" alt="Trouwfeest tumbnail">
+                            </li>
+                            <li class="splide__slide" data-splide-html-video="assets/video/bedrijfsfeest.mp4">
+                                <img src="assets/img/herfst.jpeg" alt="Bedrijfsfeest tumbnail">
+                            </li>
+                            <li class="splide__slide" data-splide-html-video="assets/video/studio.mp4">
+                                <img src="assets/img/herfst.jpeg" alt="Studio tumbnail">
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
+
+                <div class="grid grid-cols-3">
+                    <img src="assets/img/herfst.jpeg"
+                         class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
+                         alt="herfst"
+                         data-uitleg="test foto1"
+                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                    <img src="assets/img/herfst.jpeg"
+                         class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
+                         alt="herfst"
+                         data-uitleg="test foto2"
+                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                    <img src="assets/img/herfst.jpeg"
+                         class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
+                         alt="herfst"
+                         data-uitleg="test foto3"
+                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                </div>
+                <div class="grid grid-cols-3 text-center">
+                    <img src="assets/img/herfst.jpeg"
+                         class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
+                         alt="herfst"
+                         data-uitleg=" foto4"
+                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                    <img src="assets/img/herfst.jpeg"
+                         class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
+                         alt="herfst"
+                         data-uitleg="test foto5"
+                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                    <img src="assets/img/herfst.jpeg"
+                         class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"
+                         alt="herfst"
+                         data-uitleg="test foto6"
+                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                </div>
+                <!--                    <div class="mx-2 md:mx-auto pt-4 xl:pt-0 flex flex-wrap justify-center max-w-7xl 3xl:max-w-full">-->
+                <!--                        <img src="assets/img/herfst.jpeg"-->
+                <!--                             class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer hover:scale-50"-->
+                <!--                             alt="herfst"-->
+                <!--                             data-uitleg="test foto1"-->
+                <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
+                <!--                        <img src="assets/img/herfst.jpeg"-->
+                <!--                             class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"-->
+                <!--                             alt="herfst"-->
+                <!--                             data-uitleg="test foto2"-->
+                <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
+                <!--                        <img src="assets/img/herfst.jpeg"-->
+                <!--                             class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"-->
+                <!--                             alt="herfst"-->
+                <!--                             data-uitleg="test foto3"-->
+                <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
+                <!--                        <img src="assets/img/herfst.jpeg"-->
+                <!--                             class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"-->
+                <!--                             alt="herfst"-->
+                <!--                             data-uitleg=" foto4"-->
+                <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
+                <!--                        <img src="assets/img/herfst.jpeg"-->
+                <!--                             class="pb-4 mr-0 lg:mr-2 xl:mr-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"-->
+                <!--                             alt="herfst"-->
+                <!--                             data-uitleg="test foto5"-->
+                <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
+                <!--                        <img src="assets/img/herfst.jpeg"-->
+                <!--                             class="pb-4 ml-0 lg:ml-2 xl:ml-0 xl:pb-0 lg:pt-0 w-96 flex-1 cursor-pointer"-->
+                <!--                             alt="herfst"-->
+                <!--                             data-uitleg="test foto6"-->
+                <!--                             onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">-->
+                <!--                    </div>-->
             </div>
         </div>
-    </section>
-</div>
+        <div id="modal_overlay" onclick="openModal(false)"
+             class="z-50 hidden fixed inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-20 md:pt-10 md:pt-0">
+
+            <!-- modal -->
+            <div id="modal"
+                 class="opacity-0 top-1/2 transform -translate-y-2/3 scale-150  relative w-10/12 md:w-1/2 bg-white rounded shadow-lg transition-opacity transition-transform duration-300">
+
+                <!-- button close -->
+                <button
+                        onclick="openModal(false)"
+                        class="absolute -top-3 -right-3 bg-red-500 hover:bg-red-600 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- body -->
+                <div class="w-full p-0 rounded-xl">
+                    <img id="image" src="" alt="">
+                    <p id="tekst" class="mt-4 ml-2 mb-4"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <footer class="border-t-4 border-blue-900 pt-2 pb-2 px-6 bg-white">
     <div class="mx-auto font-bold text-center">
@@ -407,6 +405,7 @@
             btn.classList.replace('hover:bg-green-500', 'hover:bg-red-500');
         }
     }
+
     document.onkeydown = function (e) {
         if (e.key === "Escape" || e.key === "Backspace") {
             openModal(false);
