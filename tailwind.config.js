@@ -17,7 +17,9 @@ module.exports = {
             backgroundImage: theme => ({
                 'home': "url('../assets/img/bubble.jpg')",
             }),
-
+            maxWidth: {
+                '8xl': '85rem'
+            },
         },
     },
     variants: {
