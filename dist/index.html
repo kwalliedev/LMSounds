@@ -10,7 +10,7 @@
           content="Zoek je een nog een DJ voor je feest? Dan kan LM-Sounds helpen. Wij bieden DJ's aangepast aan jou wensen. Of wil je je eigen plaat opnemen, want dit kan ook in onze professionele opnamestudio!">
     <meta name="robots" content="index,follow">
 
-    //og
+<!--    og-->
     <meta property="og:locale" content="nl_BE">
     <meta property="og:site_name" content="LM-Sounds DJ Kempen">
     <meta property="og:title" content="LM-Sounds"/>
@@ -19,21 +19,21 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://www.lm-sounds.com"/>
     <meta property="og:image" content="https://www.lm-sounds.com/assets/img/logo.IDK"/>
-    //fix type
+<!--    fix type-->
     <meta property="og:image:type" content="image/IDK"/>
-    // fix type
+<!--    fix type-->
     <meta property="og:image:width" content="400"/>
     <meta property="og:image:height" content="300"/>
     <meta property="og:image:alt" content="Logo van LM-Sounds"/>
 
-    //Twitter
+<!--    Twitter-->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.lm-sounds.com">
     <meta property="twitter:title" content="LM-Sounds DJ Kempen">
     <meta property="twitter:description"
           content="Zoek je een nog een DJ voor je feest? Dan kan LM-Sounds helpen. Wij bieden DJ's aangepast aan jou wensen. Of wil je je eigen plaat opnemen, want dit kan ook in onze professionele opnamestudio!">
     <meta property="twitter:image" content="https://www.lm-sounds.com/assets/img/logo.IDK">
-    //fix type
+<!--    fix type-->
 
     <title>LMSounds</title>
 
@@ -74,41 +74,74 @@
     </div>
 </nav>
 
-<div class="z-10 fixed bottom-10 right-10 hidden md:block">
-
-    <div class="shadow-2xl rounded-2xl bg-blue-100 px-12">
-        <button onclick="streamToggle()" id="streamToggle"
-                class="absolute -top-5 -right-5 bg-red-400 hover:bg-red-500 text-2xl w-12 h-12 rounded-full focus:outline-none text-white">
-            <i class="fas fa-times text-4xl"></i>
-        </button>
-
-        <div id="streamContent" class="transition duration-500 ease-in-out">
-            <div class="px-4 py-1">
-                <h2 class="text-2xl text-center font-bold">Stream ons!</h2>
-            </div>
-
-            <div class="px-3 py-1 ">
-                <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="_blank">
-                    <img src="./img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-10 m-auto">
-                </a>
-            </div>
-            <div class="px-3 py-1">
-                <a href="https://music.apple.com/us/artist/l-marchal/1502021497" target="_blank">
-                    <img src="./img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-10 m-auto">
-                </a>
-            </div>
-            <div class="px-3">
-                <a href="https://www.deezer.com/nl/artist/88787692" target="_blank">
-                    <img src="./img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-10 m-auto">
-                </a>
-            </div>
-            <div class="px-3 py-1">
-                <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw" target="_blank">
-                    <img src="./img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-10 m-auto">
-                </a>
-            </div>
+<div id="stream" class="z-10 fixed bottom-0 right-4 bg-white p-2 rounded-t-xl w-64 transition-transform">
+    <div class="text-center w-56 mx-auto cursor-pointer" onclick="streamToggle()">
+        <h1 class="mb-4 text-2xl font-bold inline-block text-center">Stream ons</h1>
+        <div id="icon" class="inline-block text-center ml-4 relative transform -rotate-180  transition duration-500">
+<!--          top-2   -->
+            <i class="fas fa-chevron-up block"></i>
+            <i class="relative -top-2 fas fa-chevron-up block"></i>
         </div>
     </div>
+    <div>
+        <div>
+            <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="blank">
+                <img src="assets/img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-10 m-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://music.apple.com/us/artist/l-marchal/1502021497" target="blank">
+                <img src="assets/img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-10 m-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.deezer.com/nl/artist/88787692" target="blank">
+                <img src="assets/img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-10 m-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw" target="blank">
+                <img src="assets/img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-10 m-auto">
+            </a>
+        </div>
+    </div>
+
+    <!--    <div class="shadow-2xl rounded-2xl bg-blue-100 px-12">-->
+    <!--        <button onclick="streamToggle()" id="streamToggle"-->
+    <!--                class="absolute -top-5 -right-5 bg-red-400 hover:bg-red-500 text-2xl w-12 h-12 rounded-full focus:outline-none text-white">-->
+    <!--            <i class="fas fa-times text-4xl"></i>-->
+    <!--        </button>-->
+
+    <!--        <div id="streamContent" class="transition duration-500 ease-in-out">-->
+    <!--            <div class="px-4 py-1">-->
+    <!--                <h2 class="text-2xl text-center font-bold">Stream ons!</h2>-->
+    <!--            </div>-->
+
+    <!--            <div class="px-3 py-1 ">-->
+    <!--                <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="_blank">-->
+    <!--                    <img src="./img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-10 m-auto">-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--            <div class="px-3 py-1">-->
+    <!--                <a href="https://music.apple.com/us/artist/l-marchal/1502021497" target="_blank">-->
+    <!--                    <img src="./img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-10 m-auto">-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--            <div class="px-3">-->
+    <!--                <a href="https://www.deezer.com/nl/artist/88787692" target="_blank">-->
+    <!--                    <img src="./img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-10 m-auto">-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--            <div class="px-3 py-1">-->
+    <!--                <a href="https://music.youtube.com/channel/UCkg&#45;&#45;kiYrxvbC9ZfsyqBOSw" target="_blank">-->
+    <!--                    <img src="./img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-10 m-auto">-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
 </div>
 <section class="bg-home bg-center bg-cover bg-fixed bg-no-repeat">
     <div class="container mx-auto">
@@ -390,19 +423,22 @@
     }
 
     function streamToggle() {
-        var btn = document.getElementById('streamToggle');
-        var content = document.getElementById('streamContent');
+        var stream = document.getElementById("stream");
+        var icon = document.getElementById("icon");
 
-        content.classList.toggle('hidden');
-
-        if (content.classList.contains('hidden')) {
-            btn.children.item(0).classList.replace('fa-times', 'fa-headphones');
-            btn.classList.replace('bg-red-400', 'bg-green-400');
-            btn.classList.replace('hover:bg-red-500', 'hover:bg-green-500');
-        } else {
-            btn.children.item(0).classList.replace('fa-headphones', 'fa-times');
-            btn.classList.replace('bg-green-400', 'bg-red-400');
-            btn.classList.replace('hover:bg-green-500', 'hover:bg-red-500');
+        if (icon.classList.contains("rotate-180")){
+            stream.classList.add('transform');
+            stream.classList.add('translate-y-3/4');
+            icon.classList.remove('transform');
+            icon.classList.remove('rotate-180');
+            icon.classList.add('top-2');
+        }
+        else {
+            stream.classList.remove('transform');
+            stream.classList.remove('translate-y-3/4');
+            icon.classList.add('transform');
+            icon.classList.add('rotate-180');
+            icon.classList.remove('top-2');
         }
     }
 
