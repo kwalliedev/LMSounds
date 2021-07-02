@@ -19,5 +19,8 @@ new Splide('.splide', {
             height : '14rem',
             width: "25rem",
         },
-    }
+    },
+    video: {
+        autoplay: false
+    },
 }).mount(window.splide.Extensions);
