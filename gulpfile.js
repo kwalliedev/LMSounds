@@ -10,5 +10,5 @@ gulp.task('default', function () {
             directory: true
         }
     });
-    gulp.watch('**/*.{html,css,js}').on('change', browserSync.reload);
+    gulp.watch('**/*.{html,css,js,php}').on('change', browserSync.reload);
 });
