@@ -1,27 +1,32 @@
-function email() {
+
     // setup variabeltjes
+
     const sgMail = require('@sendgrid/mail')
     require('dotenv').config();
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-
-
-// variabeltjes voor in de code eronder
+console.log('voor functie')
+    function yeet() {
+        console.log('voor')
+    // variabeltjes voor in de code eronder
     const ontvangeremail = 'kwalliedev@gmail.com';   // admin dinges
 
-    const naam = document.getElementById('naam').value;             // zender naam
-    const zenderemail = document.getElementById('email').value;      // zender email
-    const onderwerp = document.getElementById('onderwerp').value;
-    const bericht = document.getElementById('bericht').value;
+    // const naam = document.getElementById('naam').innerText;             // zender naam
+    // const zenderemail = document.getElementById('email').innerText;      // zender email
+    // const onderwerp = document.getElementById('onderwerp').innerText;
+    // const bericht = document.getElementById('bericht').innerText;
 
 
+    const zenderemail = 'maximekeni@gmail.com';      // zender email
+    const onderwerp = 'yeet';
+    const bericht = 'stoeme dinges';
 
-// bericht zelf
+    // bericht zelf
     const msg = {
         to: zenderemail, // Change to your recipient
         from: ontvangeremail, // Change to your verified sender
         subject: onderwerp,
         text: bericht,
-        html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+        html: '<strong>${bericht}</strong>',
     }
 
     sgMail
@@ -34,5 +39,5 @@ function email() {
             console.error(error)
         })
 
-    alert('ge stinkt')
+        console.log('na')
 }
