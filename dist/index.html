@@ -354,10 +354,10 @@
             <div class="mt-6">
                 <label for="onderwerp" class="text-gray-700 font-semibold">Onderwerp</label>
                 <select name="onderwerp" id="onderwerp"
-                        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out">
+                        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200  bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out">
                     <option value="Vraag">Algemene vraag</option>
-                    <option value="BoekingOptreden">Boeking optreden</option>
-                    <option value="BroekingStudio">Boeking studio</option>
+                    <option value="Boeking Optreden">Boeking optreden</option>
+                    <option value="Boeking Studio">Boeking studio</option>
 
                 </select>
             </div>
@@ -369,7 +369,7 @@
             </div>
 
             <div class="mt-6 text-right">
-                <button type="submit"
+                <button type="submit" id="submitForm"
                         class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-xl focus:outline-none">
                     Verstuur
                 </button>
@@ -488,8 +488,8 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video/dist/js/splide-extension-video.min.js"></script>
-
-<!--<script src="js/sendgrid.js"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="js/mail.js"></script>
 
 <script src="js/type.js"></script>
 <script src="js/types.js"></script>
