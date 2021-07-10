@@ -2,30 +2,61 @@
     emailjs.init("user_Jt0lHvxSlxt2pFERHlX88");
 })();
 
-document.getElementById("submitForm").addEventListener('click', function (e){
+document.getElementById("submitForm").addEventListener('click', function (e) {
     e.preventDefault()
-    var name = document.getElementById('naam').value;
-    var email = document.getElementById('email').value
-    var selection =  document.getElementById('onderwerp').value
-    var message = document.getElementById('bericht').value
+    var name = document.getElementById('naam');
+    var email = document.getElementById('email');
+    var selection = document.getElementById('onderwerp');
+    var message = document.getElementById('bericht');
 
-    if (name !== "" || email !== "" || message !== "" || name !== undefined || email !== undefined || message !== undefined){
-    var templateMail = {
-        sender_name: name,
-        sender_mail: email,
-        dropdown_select: selection,
-        msg: message,
-    }
+    naam.classList.replace("border-red-900", "border-gray-200");
+    email.classList.replace("border-red-900", "border-gray-200");
+    message.classList.replace("border-red-900", "border-gray-200");
 
-    emailjs.send("service_8yacc89","template_a39y0cg", templateMail)
-        .then((response) => {
-            console.log("send");
-        })
-        .catch((error) => {
-            console.error(error);
-        });
+    var errorNaam = naam.nextElementSibling;
+    errorNaam.classList.add("hidden");
+
+    var errorMail = email.nextElementSibling;
+    errorMail.classList.add("hidden");
+
+    var errorMsg = message.nextElementSibling;
+    errorMsg.classList.add("hidden");
+
+    if (name.value !== "" && email.value !== "" && message.value !== "" && name.value !== undefined && email.value !== undefined && message.value !== undefined) {
+        var templateMail = {
+            sender_name: name,
+            sender_mail: email,
+            dropdown_select: selection,
+            msg: message,
+        }
+        emailjs.send("service_8yacc89","template_a39y0cg", templateMail)
+            .then((response) => {
+                console.log("send");
+            })
+            .catch((error) => {
+                console.error(error);
+            });
         document.getElementById('naam').value = "";
         document.getElementById('email').value = "";
         document.getElementById('bericht').value = "";
+    } else {
+        if (naam.value === ""){
+            errorNaam = naam.nextElementSibling;
+            errorNaam.classList.remove("hidden");
+            naam.classList.replace("border-gray-200", "border-red-900");
+        }
+        if (email.value === ""){
+            errorMail = email.nextElementSibling;
+            errorMail.classList.remove("hidden");
+            email.classList.replace("border-gray-200", "border-red-900");
+
+        }
+
+        if (message.value === ""){
+            errorMsg = message.nextElementSibling;
+            errorMsg.classList.remove("hidden");
+            message.classList.replace("border-gray-200", "border-red-900");
+
+        }
     }
 })
