@@ -11,17 +11,24 @@ module.exports = {
             },
             colors: {
                 gray: {
-                    250: 'rgba(221,221,221,0.92)'
+                    250: 'rgba(245,245,245,0.92)'
                 }
             },
             backgroundImage: theme => ({
                 'home': "url('../assets/img/bubble.jpg')",
             }),
-
+            maxWidth: {
+                '8xl': '85rem'
+            },
+            minHeight: {
+                '50': '50vh'
+            },
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            borderWidth: ['hover', 'focus', 'active', 'visited'],
+        },
     },
     plugins: [
         // ...

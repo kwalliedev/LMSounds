@@ -10,19 +10,19 @@ function openModal(value, src, alt, tekst) {
         document.getElementById("image").setAttribute("src", src);
         document.getElementById("image").setAttribute("alt", alt);
         document.getElementById("tekst").innerHTML = tekst;
-        overlayCl.classList.remove('hidden')
+        overlayCl.classList.remove('hidden');
         setTimeout(() => {
-            modalCl.remove('opacity-0')
-            modalCl.remove('-translate-y-full')
-            modalCl.remove('scale-150')
-        }, 100);
+            modalCl.remove('opacity-0');
+            modalCl.remove('-translate-y-full');
+            modalCl.remove('scale-75');
+        });
     } else {
-        modalCl.add('-translate-y-full')
+        modalCl.add('-translate-y-full');
         setTimeout(() => {
-            modalCl.add('opacity-0')
-            modalCl.add('scale-150')
-        }, 100);
-        setTimeout(() => overlayCl.classList.add('hidden'), 300);
+            modalCl.add('opacity-0');
+            modalCl.add('scale-75');
+        });
+        setTimeout(() => overlayCl.classList.add('hidden'));
     }
 }
 
