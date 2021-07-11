@@ -82,8 +82,43 @@
     </div>
 </nav>
 
-<div class="bg-home bg-center bg-cover bg-fixed bg-no-repeat">
-    <section class="container mx-auto">
+<div id="stream" class="z-10 fixed bottom-0 right-4 bg-white p-2 rounded-t-xl w-64 transition-transform">
+    <div class="text-center w-56 mx-auto cursor-pointer" onclick="streamToggle()">
+        <h1 class="mb-4 text-2xl font-bold inline-block text-center">Stream ons</h1>
+        <div id="icon" class="inline-block text-center ml-4 relative transform -rotate-180  transition duration-500">
+            <i class="fas fa-chevron-up block"></i>
+            <i class="relative -top-2 fas fa-chevron-up block"></i>
+        </div>
+    </div>
+    <div>
+        <div>
+            <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="blank">
+                <img src="assets/img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-10 m-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://music.apple.com/us/artist/l-marchal/1502021497" target="blank">
+                <img src="assets/img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-10 m-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.deezer.com/nl/artist/88787692" target="blank">
+                <img src="assets/img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-10 m-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw" target="blank">
+                <img src="assets/img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-10 m-auto">
+            </a>
+        </div>
+    </div>
+</div>
+  
+<section class="bg-home bg-center bg-cover bg-fixed bg-no-repeat">
+    <div class="container mx-auto">
         <div class="min-h-screen">
             <div id="head" class="sticky top-1/4">
                 <div class="text-center pb-5">
@@ -100,8 +135,8 @@
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 
 <section id="wie2" class="min-h-screen bg-blue-100 lg:pt-8 flex">
     <div class="m-auto grid grid-cols-1 lg:grid-cols-2 container">
@@ -154,7 +189,7 @@
         </div>
     </div>
 </section>
-
+  
 <section id="contact" class="min-h-screen bg-home bg-center bg-cover bg-fixed bg-no-repeat lg:pt-8 flex">
     <div class="m-auto w-11/12 md:w-3/4 lg:w-1/2 3xl:w-2/5">
         <form id="form"
@@ -219,7 +254,7 @@
         </form>
     </div>
 </section>
-
+  
 <div>
     <section class="container mx-auto">
         <div id="gallerij" class="min-h-screen py-16">
@@ -296,7 +331,6 @@
                     <p id="tekst" class="mt-4 ml-2 mb-4"></p>
                 </div>
             </div>
-
         </div>
     </section>
 </div>
@@ -350,26 +384,29 @@
     }
 
     function streamToggle() {
-        var btn = document.getElementById('streamToggle');
-        var content = document.getElementById('streamContent');
+        var stream = document.getElementById("stream");
+        var icon = document.getElementById("icon");
 
-        content.classList.toggle('hidden');
-
-        if (content.classList.contains('hidden')) {
-            btn.children.item(0).classList.replace('fa-times', 'fa-headphones');
-            btn.classList.replace('bg-red-400', 'bg-green-400');
-            btn.classList.replace('hover:bg-red-500', 'hover:bg-green-500');
-        } else {
-            btn.children.item(0).classList.replace('fa-headphones', 'fa-times');
-            btn.classList.replace('bg-green-400', 'bg-red-400');
-            btn.classList.replace('hover:bg-green-500', 'hover:bg-red-500');
+        if (icon.classList.contains("rotate-180")){
+            stream.classList.add('transform');
+            stream.classList.add('translate-y-3/4');
+            icon.classList.remove('transform');
+            icon.classList.remove('rotate-180');
+            icon.classList.add('top-2');
+        }
+        else {
+            stream.classList.remove('transform');
+            stream.classList.remove('translate-y-3/4');
+            icon.classList.add('transform');
+            icon.classList.add('rotate-180');
+            icon.classList.remove('top-2');
         }
     }
 
     document.getElementById("jaar").innerHTML = new Date().getFullYear();
     var labels = document.getElementsByClassName("star");
     for (i = 0; i < labels.length; i++){
-        labels[i].innerHTML += "  &ast;"
+        labels[i].innerHTML += "&ast;"
     }
 </script>
 </body>
