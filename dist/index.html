@@ -75,10 +75,14 @@
            onclick="navToggle()">
             <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Galerij</span>
         </a>
+        <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 md:hidden" href="#streamons"
+           onclick="navToggle()">
+            <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Stream Ons</span>
+        </a>
     </div>
 </nav>
 
-<div id="stream" class="z-10 fixed bottom-0 right-4 p-2 rounded-t-xl w-64 transition-transform bg-white">
+<div id="stream" class="z-10 fixed bottom-0 right-4 p-2 rounded-t-xl w-64 transition-transform bg-white hidden md:block">
     <div class="text-center w-56 mx-auto cursor-pointer" onclick="streamToggle()">
         <h1 class="mb-4 text-2xl font-bold inline-block text-center">Stream ons</h1>
         <div id="icon" class="inline-block text-center ml-4 relative transform -rotate-180  transition duration-500">
@@ -186,7 +190,7 @@
     </div>
 </section>
 
-<section id="contact" class="min-h-screen lg:pt-8 flex py-16 sm:py-16">
+<section id="contact" class="min-h-screen lg:pt-8 flex py-16 sm:py-0">
     <div class="m-auto w-11/12 md:w-3/4 lg:w-1/2 3xl:w-2/5">
         <form id="form"
               class="m-auto p-8 rounded-2xl shadow-2xl bg-gray-100">
@@ -251,8 +255,8 @@
     </div>
 </section>
 
-<section id="gallerij" class="min-h-screen achtergrond lg:pt-16">
-    <div  class="container mx-auto">
+<section id="gallerij" class="min-h-screen achtergrond pt-16">
+    <div class="container mx-auto">
         <div class="p-3 w-full block">
             <div class="splide mx-2 md:mx-auto">
                 <div class="splide__track ">
@@ -327,6 +331,35 @@
         </div>
     </div>
 </section>
+
+<section id="streamons" class="min-h-screen lg:pt-8 flex md:hidden">
+    <div class="m-auto">
+        <div>
+            <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="blank">
+                <img src="assets/img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-20 my-4 mx-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://music.apple.com/us/artist/l-marchal/1502021497" target="blank">
+                <img src="assets/img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-20 my-4 mx-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.deezer.com/nl/artist/88787692" target="blank">
+                <img src="assets/img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-20 my-4 mx-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw" target="blank">
+                <img src="assets/img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-20 my-4 mx-auto">
+            </a>
+        </div>
+    </div>
+</section>
+
 
 <footer class="border-t-4 border-blue-900 pt-2 pb-2 px-6 bg-gray-100">
     <div class="mx-auto font-bold text-center">
