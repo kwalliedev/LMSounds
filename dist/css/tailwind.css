@@ -12,14 +12,6 @@
     transition-duration: 500ms !important;
 }
 
-html {
-    scroll-snap-type: y mandatory;
-}
-
-section {
-    scroll-snap-align: start;
-}
-
-footer {
-    scroll-snap-align: end;
+.achtergrond {
+    background-color: #EBD5BE;
 }
