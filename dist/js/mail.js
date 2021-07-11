@@ -9,7 +9,7 @@ document.getElementById("submitForm").addEventListener('click', function (e) {
     var selection = document.getElementById('onderwerp');
     var message = document.getElementById('bericht');
 
-    naam.classList.replace("border-red-900", "border-gray-200");
+    name.classList.replace("border-red-900", "border-gray-200");
     email.classList.replace("border-red-900", "border-gray-200");
     message.classList.replace("border-red-900", "border-gray-200");
 
@@ -24,10 +24,10 @@ document.getElementById("submitForm").addEventListener('click', function (e) {
 
     if (name.value !== "" && email.value !== "" && message.value !== "" && name.value !== undefined && email.value !== undefined && message.value !== undefined) {
         var templateMail = {
-            sender_name: name,
-            sender_mail: email,
-            dropdown_select: selection,
-            msg: message,
+            sender_name: name.value,
+            sender_mail: email.value,
+            dropdown_select: selection.value,
+            msg: message.value,
         }
         emailjs.send("service_8yacc89","template_a39y0cg", templateMail)
             .then((response) => {
@@ -40,10 +40,10 @@ document.getElementById("submitForm").addEventListener('click', function (e) {
         document.getElementById('email').value = "";
         document.getElementById('bericht').value = "";
     } else {
-        if (naam.value === ""){
+        if (name.value === ""){
             errorNaam = naam.nextElementSibling;
             errorNaam.classList.remove("hidden");
-            naam.classList.replace("border-gray-200", "border-red-900");
+            name.classList.replace("border-gray-200", "border-red-900");
         }
         if (email.value === ""){
             errorMail = email.nextElementSibling;
