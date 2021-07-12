@@ -200,7 +200,7 @@
 
             <div class="mt-6">
                 <label for="naam" class="text-gray-700 font-semibold">Naam<span class="star text-red-700 ml-0.5"></span></label>
-                <input type="text" id="naam" name="naam" value=""
+                <input type="text" id="naam" name="naam" value="" required
                        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"
                        placeholder="Jan Janssens">
                 <div class="hidden text-red-700">
@@ -210,7 +210,7 @@
 
             <div class="mt-6">
                 <label for="email" class="text-gray-700 font-semibold">E-mail<span class="star text-red-700 ml-0.5"></span></label>
-                <input type="email" id="email" name="email" value=""
+                <input type="email" id="email" name="email" value="" required
                        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"
                        placeholder="jan.janssens@telenet.be"
                        pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
@@ -232,7 +232,7 @@
 
             <div class="mt-6">
                 <label for="bericht" class="text-gray-700 font-semibold">Uw bericht<span class="star text-red-700 ml-0.5"></span></label>
-                <textarea id="bericht" rows="3" name="bericht"
+                <textarea id="bericht" rows="3" name="bericht" required
                           class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"></textarea>
                 <div class="hidden text-red-700">
                     Je bericht mag niet leeg zijn
@@ -276,7 +276,7 @@
                 </div>
 
 
-                <!--                nieuwe fotos-->
+                <!--   fotos  -->
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pt-4 gap-4 lg:gap-0 max-w-8xl mx-auto">
                     <img src="assets/img/herfst.jpeg"
                          class="cursor-pointer"
@@ -332,8 +332,8 @@
                 </div>
             </div>
         </div>
-        <div id="modalmail" class="bg-black text-white fixed top-11 transform -translate-y-full w-full  transition-all duration-700">
-            <p>yeet</p>
+        <div id="modalmail" class="bg-blue-800 text-white text-center rounded-l-xl fixed top-16 right-0 transform translate-x-full w-48 p-2 transition-all duration-700">
+            <p>Je email is verstuurd!</p>
         </div>
     </section>
 </div>
@@ -361,7 +361,7 @@
             </a>
         </div>
         <div class="font-medium text-sm">
-            &copy; <span id="jaar"></span> LMSounds
+            &copy; <span id="jaar"></span> LMSounds<span class="mx-2">&dash;</span><span>Made by <a href="https://www.kwallie.be" target="blank" class="underline">Kwallie</a></span>
         </div>
     </div>
 </footer>

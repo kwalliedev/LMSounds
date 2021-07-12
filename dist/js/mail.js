@@ -22,43 +22,64 @@ document.getElementById("submitForm").addEventListener('click', function (e) {
     var errorMsg = message.nextElementSibling;
     errorMsg.classList.add("hidden");
 
-    if (name.value !== "" && email.value !== "" && message.value !== "" && name.value !== undefined && email.value !== undefined && message.value !== undefined) {
-        var templateMail = {
-            sender_name: name.value,
-            sender_mail: email.value,
-            dropdown_select: selection.value,
-            msg: message.value,
-        }
-        var mailModel = document.getElementById("modalmail");
-        mailModel.classList.replace('-translate-y-full', 'translate-y-full')
-        setTimeout(function showModel(){
-            mailModel.classList.replace('translate-y-full', "-translate-y-full")
-        },3000)
+    function validateEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
 
-        // emailjs.send("service_8yacc89","template_a39y0cg", templateMail)
-        //     .then((response) => {
-        //         console.log("send");
-        //     })
-        //     .catch((error) => {
-        //         console.error(error);
-        //     });
-        document.getElementById('naam').value = "";
-        document.getElementById('email').value = "";
-        document.getElementById('bericht').value = "";
+    if (validateEmail(email.value)) {
+
+        if (name.value !== "" && message.value !== "" && name.value !== undefined && message.value !== undefined) {
+
+            var templateMail = {
+                sender_name: name.value,
+                sender_mail: email.value,
+                dropdown_select: selection.value,
+                msg: message.value,
+            }
+            var mailModel = document.getElementById("modalmail");
+            mailModel.classList.replace('translate-x-full', 'translate-x-0')
+            setTimeout(function showModel() {
+                mailModel.classList.replace('translate-x-0', "translate-x-full")
+            }, 3000)
+
+            emailjs.send("service_8yacc89", "template_a39y0cg", templateMail)
+                .then((response) => {
+                    console.log("send");
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
+            document.getElementById('naam').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('bericht').value = "";
+
+
+        } else {
+            if (name.value === "") {
+                errorNaam = naam.nextElementSibling;
+                errorNaam.classList.remove("hidden");
+                name.classList.replace("border-gray-200", "border-red-900");
+            }
+
+            if (message.value === "") {
+                errorMsg = message.nextElementSibling;
+                errorMsg.classList.remove("hidden");
+                message.classList.replace("border-gray-200", "border-red-900");
+
+            }
+        }
     } else {
-        if (name.value === ""){
+        if (name.value === "") {
             errorNaam = naam.nextElementSibling;
             errorNaam.classList.remove("hidden");
             name.classList.replace("border-gray-200", "border-red-900");
         }
-        if (email.value === ""){
-            errorMail = email.nextElementSibling;
-            errorMail.classList.remove("hidden");
-            email.classList.replace("border-gray-200", "border-red-900");
+        errorMail = email.nextElementSibling;
+        errorMail.classList.remove("hidden");
+        email.classList.replace("border-gray-200", "border-red-900");
 
-        }
-
-        if (message.value === ""){
+        if (message.value === "") {
             errorMsg = message.nextElementSibling;
             errorMsg.classList.remove("hidden");
             message.classList.replace("border-gray-200", "border-red-900");
