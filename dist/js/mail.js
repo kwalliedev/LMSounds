@@ -29,13 +29,19 @@ document.getElementById("submitForm").addEventListener('click', function (e) {
             dropdown_select: selection.value,
             msg: message.value,
         }
-        emailjs.send("service_8yacc89","template_a39y0cg", templateMail)
-            .then((response) => {
-                console.log("send");
-            })
-            .catch((error) => {
-                console.error(error);
-            });
+        var mailModel = document.getElementById("modalmail");
+        mailModel.classList.replace('-translate-y-full', 'translate-y-full')
+        setTimeout(function showModel(){
+            mailModel.classList.replace('translate-y-full', "-translate-y-full")
+        },3000)
+
+        // emailjs.send("service_8yacc89","template_a39y0cg", templateMail)
+        //     .then((response) => {
+        //         console.log("send");
+        //     })
+        //     .catch((error) => {
+        //         console.error(error);
+        //     });
         document.getElementById('naam').value = "";
         document.getElementById('email').value = "";
         document.getElementById('bericht').value = "";
