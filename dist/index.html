@@ -10,7 +10,7 @@
           content="Zoek je een nog een DJ voor je feest? Dan kan LM-Sounds helpen. Wij bieden DJ's aangepast aan jou wensen. Of wil je je eigen plaat opnemen, want dit kan ook in onze professionele opnamestudio!">
     <meta name="robots" content="index,follow">
 
-<!--    og-->
+    <!--    og-->
     <meta property="og:locale" content="nl_BE">
     <meta property="og:site_name" content="LM-Sounds DJ Kempen">
     <meta property="og:title" content="LM-Sounds"/>
@@ -19,21 +19,21 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://www.lm-sounds.com"/>
     <meta property="og:image" content="https://www.lm-sounds.com/assets/img/logo.IDK"/>
-<!--    fix type-->
+    <!--    fix type-->
     <meta property="og:image:type" content="image/IDK"/>
-<!--    fix type-->
+    <!--    fix type-->
     <meta property="og:image:width" content="400"/>
     <meta property="og:image:height" content="300"/>
     <meta property="og:image:alt" content="Logo van LM-Sounds"/>
 
-<!--    Twitter-->
+    <!--    Twitter-->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.lm-sounds.com">
     <meta property="twitter:title" content="LM-Sounds DJ Kempen">
     <meta property="twitter:description"
           content="Zoek je een nog een DJ voor je feest? Dan kan LM-Sounds helpen. Wij bieden DJ's aangepast aan jou wensen. Of wil je je eigen plaat opnemen, want dit kan ook in onze professionele opnamestudio!">
     <meta property="twitter:image" content="https://www.lm-sounds.com/assets/img/logo.IDK">
-<!--    fix type-->
+    <!--    fix type-->
 
     <title>LMSounds</title>
 
@@ -46,7 +46,7 @@
 <body class="bg-gray-100 static">
 
 <nav id="site-menu"
-     class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none border-t-4 border-blue-800 fixed top-0">
+     class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-100 border-t-4 border-blue-800 fixed top-0 ">
     <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center lg:ml-2">
         <a href="#" class="no-underline py-1">
             <h1 class="font-bold text-lg tracking-widest">LMSounds</h1>
@@ -57,10 +57,6 @@
     </div>
     <div id="menu"
          class="w-full md:w-auto lg:mr-2 self-end md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-0 hidden text-center">
-        <!--        <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2" href="#wie"-->
-        <!--           onclick="navToggle()">-->
-        <!--            About Us-->
-        <!--        </a>-->
         <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 " href="#wie2"
            onclick="navToggle()">
             <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">DJ LM&JP</span>
@@ -79,10 +75,14 @@
            onclick="navToggle()">
             <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Galerij</span>
         </a>
+        <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 md:hidden" href="#streamons"
+           onclick="navToggle()">
+            <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Stream Ons</span>
+        </a>
     </div>
 </nav>
 
-<div id="stream" class="z-10 fixed bottom-0 right-4 bg-white p-2 rounded-t-xl w-64 transition-transform">
+<div id="stream" class="z-10 fixed bottom-0 right-4 p-2 rounded-t-xl w-64 transition-transform bg-white hidden md:block">
     <div class="text-center w-56 mx-auto cursor-pointer" onclick="streamToggle()">
         <h1 class="mb-4 text-2xl font-bold inline-block text-center">Stream ons</h1>
         <div id="icon" class="inline-block text-center ml-4 relative transform -rotate-180  transition duration-500">
@@ -116,7 +116,7 @@
         </div>
     </div>
 </div>
-  
+
 <section class="bg-home bg-center bg-cover bg-fixed bg-no-repeat">
     <div class="container mx-auto">
         <div class="min-h-screen">
@@ -138,24 +138,57 @@
     </div>
 </section>
 
-<section id="wie2" class="min-h-screen bg-blue-100 lg:pt-8 flex">
+<section id="wie2" class="min-h-screen lg:pt-8 flex">
     <div class="m-auto grid grid-cols-1 lg:grid-cols-2 container">
-        <div class="mx-4 lg:mx-0">
+        <div class="mx-4 lg:mx-0 mt-8 sm:mt-0">
             <img src="assets/img/herfst.jpeg" class="w-auto mr-auto" alt="DJ LM&JP">
         </div>
 
         <div class="text-center my-auto mx-6 lg:mx-0 lg:ml-32">
             <h1 class="text-center text-4xl my-6 font-semibold">DJ LM&amp;JP</h1>
 
-            <p class="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquam,
-                aliquid amet autem cum deserunt eligendi eveniet fugit illo ipsum iste iusto laboriosam molestiae
-                nesciunt nobis nulla obcaecati officia quae qui recusandae reiciendis suscipit temporibus
-                ullam vitae, voluptate voluptates!
-            </p>
+            <div>
+                <div class="text-justify mb-8">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim illum quisquam quo sequi! Aut autem beatae commodi
+                    consequatur deserunt iusto modi neque repellendus? Aliquid eaque eum exercitationem hic, impedit ipsum iure praesentium quas
+                    quidem ratione saepe tempora, veniam.
+                </div>
 
-            <div class="mt-8">
-                <a href="#contact" class="border-2 border-gray-300 hover:bg-gray-300 font-bold py-2 px-4 rounded">
+                <div class="flex">
+                    <div class="flex-grow-0">
+                        <i class="fas fa-check mr-2"></i>
+                    </div>
+
+                    <div class="flex-grow">
+                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque.</p>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex-grow-0">
+                        <i class="fas fa-check mr-2"></i>
+                    </div>
+
+                    <div class="flex-grow">
+                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? Ab
+                            facere itaque non provident suscipit temporibus?</p>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex-grow-0">
+                        <i class="fas fa-check mr-2"></i>
+                    </div>
+
+                    <div class="flex-grow">
+                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-8 md:my-0 md:mt-16">
+                <a href="#contact" onclick="selectOptreden()"
+                   class="bg-blue-300 hover:bg-blue-600 hover:text-white font-bold py-2 px-4 rounded transition ease-in-out duration-300">
                     Boek nu!
                     <i class="fas fa-chevron-down ml-2 animate-bounce relative top-0.5"></i>
                 </a>
@@ -164,33 +197,66 @@
     </div>
 </section>
 
-<section id="wie3" class="min-h-screen bg-green-100 lg:pt-8 flex">
+<section id="wie3" class="min-h-screen achtergrond lg:pt-8 flex">
     <div class="m-auto grid grid-cols-1 lg:grid-cols-2 container">
         <div class="text-center my-auto mx-6 lg:mx-0 lg:mr-32 order-2 lg:order-1">
             <h1 class="text-center text-4xl my-6 font-semibold">Danté</h1>
 
-            <p class="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquam,
-                aliquid amet autem cum deserunt eligendi eveniet fugit illo ipsum iste iusto laboriosam molestiae
-                nesciunt nobis nulla obcaecati officia quae qui recusandae reiciendis suscipit temporibus
-                ullam vitae, voluptate voluptates!
-            </p>
+            <div>
+                <div class="text-justify mb-8">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim illum quisquam quo sequi! Aut autem beatae commodi
+                    consequatur deserunt iusto modi neque repellendus? Aliquid eaque eum exercitationem hic, impedit ipsum iure praesentium quas
+                    quidem ratione saepe tempora, veniam.
+                </div>
 
-            <div class="mt-8">
-                <a href="#contact" class="border-2 border-gray-300 hover:bg-gray-300 font-bold py-2 px-4 rounded">
+                <div class="flex">
+                    <div class="flex-grow-0">
+                        <i class="fas fa-check mr-2"></i>
+                    </div>
+
+                    <div class="flex-grow">
+                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque.</p>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex-grow-0">
+                        <i class="fas fa-check mr-2"></i>
+                    </div>
+
+                    <div class="flex-grow">
+                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? Ab
+                            facere itaque non provident suscipit temporibus?</p>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex-grow-0">
+                        <i class="fas fa-check mr-2"></i>
+                    </div>
+
+                    <div class="flex-grow">
+                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-8 md:my-0 md:mt-16">
+                <a href="#contact" onclick="selectOptreden()"
+                   class="border-2 border-blue-500 bg-blue-100 hover:bg-blue-300 font-bold py-2 px-4 rounded transition ease-in-out duration-300">
                     Boek nu!
                     <i class="fas fa-chevron-down ml-2 animate-bounce relative top-0.5"></i>
                 </a>
             </div>
         </div>
 
-        <div class="mx-4 lg:mx-0 order-1 lg:order-2">
+        <div class="mx-4 mt-8 sm:mt-0 lg:mx-0 order-1 lg:order-2">
             <img src="assets/img/herfst.jpeg" class="w-auto ml-auto" alt="Danté">
         </div>
     </div>
 </section>
-  
-<section id="contact" class="min-h-screen bg-home bg-center bg-cover bg-fixed bg-no-repeat lg:pt-8 flex">
+
+<section id="contact" class="min-h-screen lg:pt-8 flex py-16 sm:py-0">
     <div class="m-auto w-11/12 md:w-3/4 lg:w-1/2 3xl:w-2/5">
         <form id="form"
               class="m-auto p-8 rounded-2xl shadow-2xl bg-gray-100">
@@ -243,100 +309,125 @@
                 <div class="">
                     <span class="star text-red-700 mr-0.5"></span>Verplicht
                 </div>
-            <div class="">
-                <button type="submit" id="submitForm"
-                        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-xl focus:outline-none">
-                    Verstuur
-                </button>
+                <div class="">
+                    <button type="submit" id="submitForm"
+                            class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
+                        Verstuur
+                    </button>
+                </div>
             </div>
-            </div>
-
         </form>
     </div>
-</section>
-  
-<div>
-    <section class="container mx-auto">
-        <div id="gallerij" class="min-h-screen py-16">
-            <div class="p-3 w-full block">
-                <div class="splide mx-2 md:mx-auto">
-                    <div class="splide__track ">
-                        <ul class="splide__list">
-                            <li class="splide__slide" data-splide-html-video="assets/video/trouwfeest.mp4">
-                                <img src="assets/img/herfst.jpeg" alt="Trouwfeest thumbnail">
-                            </li>
-                            <li class="splide__slide" data-splide-html-video="assets/video/bedrijfsfeest.mp4">
-                                <img src="assets/img/herfst.jpeg" alt="Bedrijfsfeest thumbnail">
-                            </li>
-                            <li class="splide__slide" data-splide-html-video="assets/video/studio.mp4">
-                                <img src="assets/img/herfst.jpeg" alt="Studio thumbnail">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                <!--   fotos  -->
-                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pt-4 gap-4 lg:gap-0 max-w-8xl mx-auto">
-                    <img src="assets/img/herfst.jpeg"
-                         class="cursor-pointer"
-                         alt="herfst"
-                         data-uitleg="test foto1"
-                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    <img src="assets/img/herfst.jpeg"
-                         class="cursor-pointer"
-                         alt="herfst"
-                         data-uitleg="test foto1"
-                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    <img src="assets/img/herfst.jpeg"
-                         class="cursor-pointer"
-                         alt="herfst"
-                         data-uitleg="test foto1"
-                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    <img src="assets/img/herfst.jpeg"
-                         class="cursor-pointer"
-                         alt="herfst"
-                         data-uitleg="test foto1"
-                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    <img src="assets/img/herfst.jpeg"
-                         class="cursor-pointer"
-                         alt="herfst"
-                         data-uitleg="test foto1"
-                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                    <img src="assets/img/herfst.jpeg"
-                         class="cursor-pointer"
-                         alt="herfst"
-                         data-uitleg="test foto1"
-                         onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                </div>
-            </div>
-        </div>
-        <div id="modal_overlay" onclick="openModal(false)"
-             class="z-50 hidden fixed inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-20 md:pt-10 md:pt-0">
-
-            <!-- modal -->
-            <div id="modal"
-                 class="opacity-0 top-1/2 transform -translate-y-1/2 lg:-translate-y-3/4 relative w-10/12 md:w-1/2 bg-white rounded shadow-lg transition-opacity transition-transform duration-900 ease-in-out">
-
-                <!-- button close -->
-                <button
-                        onclick="openModal(false)"
-                        class="absolute -top-3 -right-3 bg-red-500 hover:bg-red-600 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
-                    <i class="fas fa-times"></i>
-                </button>
-
-                <!-- body -->
-                <div class="w-full p-0 rounded-xl">
-                    <img id="image" src="" alt="">
-                    <p id="tekst" class="mt-4 ml-2 mb-4"></p>
-                </div>
-            </div>
-        </div>
-        <div id="modalmail" class="bg-blue-800 text-white text-center rounded-l-xl fixed top-16 right-0 transform translate-x-full w-48 p-2 transition-all duration-700">
+  <div id="modalmail" class="bg-blue-800 text-white text-center rounded-l-xl fixed top-16 right-0 transform translate-x-full w-48 p-2 transition-all duration-700">
             <p>Je email is verstuurd!</p>
         </div>
-    </section>
-</div>
+</section>
+
+
+<section id="gallerij" class="min-h-screen achtergrond pt-16">
+    <div class="container mx-auto">
+        <div class="p-3 w-full block">
+            <div class="splide mx-2 md:mx-auto">
+                <div class="splide__track ">
+                    <ul class="splide__list">
+                        <li class="splide__slide" data-splide-html-video="assets/video/trouwfeest.mp4">
+                            <img src="assets/img/herfst.jpeg" alt="Trouwfeest thumbnail">
+                        </li>
+                        <li class="splide__slide" data-splide-html-video="assets/video/bedrijfsfeest.mp4">
+                            <img src="assets/img/herfst.jpeg" alt="Bedrijfsfeest thumbnail">
+                        </li>
+                        <li class="splide__slide" data-splide-html-video="assets/video/studio.mp4">
+                            <img src="assets/img/herfst.jpeg" alt="Studio thumbnail">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--                nieuwe fotos-->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pt-4 gap-4 lg:gap-0 max-w-8xl mx-auto">
+                <img src="assets/img/herfst.jpeg"
+                     class="cursor-pointer"
+                     alt="herfst"
+                     data-uitleg="test foto1"
+                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                <img src="assets/img/herfst.jpeg"
+                     class="cursor-pointer"
+                     alt="herfst"
+                     data-uitleg="test foto1"
+                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                <img src="assets/img/herfst.jpeg"
+                     class="cursor-pointer"
+                     alt="herfst"
+                     data-uitleg="test foto1"
+                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                <img src="assets/img/herfst.jpeg"
+                     class="cursor-pointer"
+                     alt="herfst"
+                     data-uitleg="test foto1"
+                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                <img src="assets/img/herfst.jpeg"
+                     class="cursor-pointer"
+                     alt="herfst"
+                     data-uitleg="test foto1"
+                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                <img src="assets/img/herfst.jpeg"
+                     class="cursor-pointer"
+                     alt="herfst"
+                     data-uitleg="test foto1"
+                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+            </div>
+        </div>
+    </div>
+    <div id="modal_overlay" onclick="openModal(false)"
+         class="z-50 hidden fixed inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-20 md:pt-10 md:pt-0">
+
+        <!-- modal -->
+        <div id="modal"
+             class="opacity-0 top-1/2 transform -translate-y-1/2 lg:-translate-y-3/4 relative w-10/12 md:w-1/2 bg-white rounded shadow-lg transition-opacity transition-transform duration-900 ease-in-out">
+
+            <!-- button close -->
+            <button
+                    onclick="openModal(false)"
+                    class="absolute -top-3 -right-3 bg-red-500 hover:bg-red-600 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- body -->
+            <div class="w-full p-0 rounded-xl">
+                <img id="image" src="" alt="">
+                <p id="tekst" class="mt-4 ml-2 mb-4"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="streamons" class="min-h-screen lg:pt-8 flex md:hidden">
+    <div class="m-auto">
+        <div>
+            <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="blank">
+                <img src="assets/img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-20 my-4 mx-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://music.apple.com/us/artist/l-marchal/1502021497" target="blank">
+                <img src="assets/img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-20 my-4 mx-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.deezer.com/nl/artist/88787692" target="blank">
+                <img src="assets/img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-20 my-4 mx-auto">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw" target="blank">
+                <img src="assets/img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-20 my-4 mx-auto">
+            </a>
+        </div>
+    </div>
+</section>
 
 <footer class="border-t-4 border-blue-900 pt-2 pb-2 px-6 bg-gray-100">
     <div class="mx-auto font-bold text-center">
@@ -390,14 +481,13 @@
         var stream = document.getElementById("stream");
         var icon = document.getElementById("icon");
 
-        if (icon.classList.contains("rotate-180")){
+        if (icon.classList.contains("rotate-180")) {
             stream.classList.add('transform');
             stream.classList.add('translate-y-3/4');
             icon.classList.remove('transform');
             icon.classList.remove('rotate-180');
             icon.classList.add('top-2');
-        }
-        else {
+        } else {
             stream.classList.remove('transform');
             stream.classList.remove('translate-y-3/4');
             icon.classList.add('transform');
@@ -406,9 +496,13 @@
         }
     }
 
+    function selectOptreden() {
+        document.getElementById("onderwerp").selectedIndex = "1";
+    }
+
     document.getElementById("jaar").innerHTML = new Date().getFullYear();
     var labels = document.getElementsByClassName("star");
-    for (i = 0; i < labels.length; i++){
+    for (i = 0; i < labels.length; i++) {
         labels[i].innerHTML += "&ast;"
     }
 </script>
