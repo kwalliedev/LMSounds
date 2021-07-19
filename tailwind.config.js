@@ -19,7 +19,7 @@ module.exports = {
                 gray: {
                     250: 'rgba(245,245,245,0.92)'
                 },
-                achtergrond: '#EBD5BE',
+                kleur: '#0E0E28'
             },
             backgroundImage: theme => ({
                 'home': "url('../assets/img/bubble.jpg')",
