@@ -1,6 +1,6 @@
 //video carrousel
 new Splide('#video', {
-    height: '47.814rem',
+    height: '42.75rem',
     width: "85rem",
     cover: true,
     lazyLoad: 'sequential',
@@ -27,12 +27,27 @@ new Splide('#video', {
 
 new Splide('#galerijFoto', {
     type: 'loop',
-    focus: 'center',
-    width: '85rem',
+    perPage: 2,
+    gap: '2rem',
+    width: '60rem',
+    height: '32.5rem',
     autoplay: true,
     lazyLoad: 'nearby',
-    padding: {
-        left: '5rem',
-        right: '5rem',
+    breakpoints: {
+        '1024':{
+            perPage: 1,
+            gap: '2rem',
+            height: '30rem'
+        },
+        '768': {
+            perPage: 1,
+            gap: '2rem',
+            height: '40rem'
+        },
+        '480': {
+            perPage: 1,
+            gap: '1rem',
+            height: '22rem',
+        }
     }
 }).mount();
