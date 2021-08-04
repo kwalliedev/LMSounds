@@ -39,6 +39,7 @@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css">
     <link rel="stylesheet" href="css/splide-extension-video.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gray-100 static">
@@ -72,7 +73,7 @@
         </a>
     </div>
 </nav>
-<section id="home" class="bg-center bg-cover bg-fixed bg-top bg-no-repeat">
+<section id="home" class="">
     <div class="container mx-auto">
         <div class="min-h-screen">
             <div id="head" class="sticky top-1/4">
@@ -450,7 +451,14 @@
 <script defer src="js/splide.min.js"></script>
 <script defer src="js/slider.js"></script>
 <script defer src="js/modal.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 800
+    });
+</script>
 <script>
     function navToggle() {
         var btn = document.getElementById('menuBtn');
