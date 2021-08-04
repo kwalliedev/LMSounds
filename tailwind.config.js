@@ -22,7 +22,7 @@ module.exports = {
                 kleur: '#0E0E28'
             },
             backgroundImage: theme => ({
-                'home': "url('../assets/img/bubble.jpg')",
+                'home': "url('../assets/img/Home.jpg')",
             }),
             maxWidth: {
                 '8xl': '85rem'
