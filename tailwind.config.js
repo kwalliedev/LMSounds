@@ -1,5 +1,11 @@
 module.exports = {
-    purge: [],
+    // purge: {
+    //     enabled: true,
+    //     content: [
+    //         './dist/*.html',
+    //         './dist/error/*.html',
+    //     ],
+    // },
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
@@ -12,16 +18,20 @@ module.exports = {
             colors: {
                 gray: {
                     250: 'rgba(245,245,245,0.92)'
-                }
+                },
+                kleur: '#0E0E28'
             },
             backgroundImage: theme => ({
-                'home': "url('../assets/img/bubble.jpg')",
+                'home': "url('../assets/img/Home.jpg')",
             }),
             maxWidth: {
                 '8xl': '85rem'
             },
             minHeight: {
                 '50': '50vh'
+            },
+            inset: {
+                '2/5': '40%'
             },
         },
     },

@@ -18,12 +18,10 @@
           content="Zoek je een nog een DJ voor je feest? Dan kan LM-Sounds helpen. Wij bieden DJ's aangepast aan jou wensen. Of wil je je eigen plaat opnemen, want dit kan ook in onze professionele opnamestudio!">
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://www.lm-sounds.com"/>
-    <meta property="og:image" content="https://www.lm-sounds.com/assets/img/logo.IDK"/>
-    <!--    fix type-->
-    <meta property="og:image:type" content="image/IDK"/>
-    <!--    fix type-->
-    <meta property="og:image:width" content="400"/>
-    <meta property="og:image:height" content="300"/>
+    <meta property="og:image" content="/assets/img/Logo.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="240"/>
+    <meta property="og:image:height" content="135"/>
     <meta property="og:image:alt" content="Logo van LM-Sounds"/>
 
     <!--    Twitter-->
@@ -32,24 +30,25 @@
     <meta property="twitter:title" content="LM-Sounds DJ Kempen">
     <meta property="twitter:description"
           content="Zoek je een nog een DJ voor je feest? Dan kan LM-Sounds helpen. Wij bieden DJ's aangepast aan jou wensen. Of wil je je eigen plaat opnemen, want dit kan ook in onze professionele opnamestudio!">
-    <meta property="twitter:image" content="https://www.lm-sounds.com/assets/img/logo.IDK">
-    <!--    fix type-->
+    <meta property="twitter:image" content="/assets/img/Logo.png">
 
-    <title>LMSounds</title>
+    <title>LM&dash;Sounds</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css">
+    <link rel="stylesheet" href="css/splide-extension-video.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gray-100 static">
 
 <nav id="site-menu"
-     class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-100 border-t-4 border-blue-800 fixed top-0 ">
+     class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-100 border-t-4 border-kleur fixed top-0 ">
     <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center lg:ml-2">
         <a href="#" class="no-underline py-1">
-            <h1 class="font-bold text-lg tracking-widest">LMSounds</h1>
+            <!--            <h1 class="font-bold text-lg tracking-widest">LM&dash;Sounds</h1>-->
+            <img src="assets/img/Logo.png" alt="LM&dash;Sounds logo" width="30" height="30">
         </a>
         <button id="menuBtn" class="block md:hidden focus:outline-none p-2 ml-auto" onclick="navToggle()">
             <span class="fas fa-bars"></span>
@@ -57,13 +56,9 @@
     </div>
     <div id="menu"
          class="w-full md:w-auto lg:mr-2 self-end md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-0 hidden text-center">
-        <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 " href="#wie2"
+        <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 " href="#about"
            onclick="navToggle()">
             <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">DJ LM&JP</span>
-        </a>
-        <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2" href="#wie3"
-           onclick="navToggle()">
-            <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Danté</span>
         </a>
         <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2"
            href="#contact"
@@ -75,49 +70,9 @@
            onclick="navToggle()">
             <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Galerij</span>
         </a>
-        <a class="text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 md:hidden" href="#streamons"
-           onclick="navToggle()">
-            <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Stream Ons</span>
-        </a>
     </div>
 </nav>
-
-<div id="stream" class="z-10 fixed bottom-0 right-4 p-2 rounded-t-xl w-64 transition-transform bg-white hidden md:block">
-    <div class="text-center w-56 mx-auto cursor-pointer" onclick="streamToggle()">
-        <h1 class="mb-4 text-2xl font-bold inline-block text-center">Stream ons</h1>
-        <div id="icon" class="inline-block text-center ml-4 relative transform -rotate-180  transition duration-500">
-            <i class="fas fa-chevron-up block"></i>
-            <i class="relative -top-2 fas fa-chevron-up block"></i>
-        </div>
-    </div>
-    <div>
-        <div>
-            <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="blank">
-                <img src="assets/img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-10 m-auto">
-            </a>
-        </div>
-
-        <div>
-            <a href="https://music.apple.com/us/artist/l-marchal/1502021497" target="blank">
-                <img src="assets/img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-10 m-auto">
-            </a>
-        </div>
-
-        <div>
-            <a href="https://www.deezer.com/nl/artist/88787692" target="blank">
-                <img src="assets/img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-10 m-auto">
-            </a>
-        </div>
-
-        <div>
-            <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw" target="blank">
-                <img src="assets/img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-10 m-auto">
-            </a>
-        </div>
-    </div>
-</div>
-
-<section class="bg-home bg-center bg-cover bg-fixed bg-no-repeat">
+<section id="home" class="bg-center bg-cover bg-fixed bg-top bg-no-repeat">
     <div class="container mx-auto">
         <div class="min-h-screen">
             <div id="head" class="sticky top-1/4">
@@ -128,7 +83,7 @@
                               data-types-items="trouwfeesten!, verjaardagsfeesten!, bedrijfsfeesten!, evenementen!"></span>
                     </h2>
                     <div class="text-center mt-10">
-                        <a href="#wie2" class="p-4">
+                        <a href="#about" class="p-4">
                             <i class="fas fa-chevron-down fa-2x"></i>
                         </a>
                     </div>
@@ -137,11 +92,38 @@
         </div>
     </div>
 </section>
+<!--<section class="mt-4 lg:mt-8">-->
+<!--    <div class="grid sm:grid-cols-2 lg:grid-cols-4">-->
+<!--        <div class="mb-4 lg:mb-0">-->
+<!--            <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="blank">-->
+<!--                <img src="assets/img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-10 m-auto">-->
+<!--            </a>-->
+<!--        </div>-->
 
-<section id="wie2" class="min-h-screen lg:pt-8 flex">
+<!--        <div class="mb-4 lg:mb-0">-->
+<!--            <a href="https://music.apple.com/us/artist/l-marchal/1502021497" target="blank">-->
+<!--                <img src="assets/img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-10 m-auto">-->
+<!--            </a>-->
+<!--        </div>-->
+
+<!--        <div class="mb-4 lg:mb-0">-->
+<!--            <a href="https://www.deezer.com/nl/artist/88787692" target="blank">-->
+<!--                <img src="assets/img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-10 m-auto">-->
+<!--            </a>-->
+<!--        </div>-->
+
+<!--        <div class="mb-4 lg:mb-0">-->
+<!--            <a href="https://music.youtube.com/channel/UCkg&#45;&#45;kiYrxvbC9ZfsyqBOSw" target="blank">-->
+<!--                <img src="assets/img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-10 m-auto">-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<section id="about" class="min-h-screen lg:pt-6 flex bg-kleur text-white">
     <div class="m-auto grid grid-cols-1 lg:grid-cols-2 container">
         <div class="mx-4 lg:mx-0 mt-8 sm:mt-0">
-            <img src="assets/img/herfst.jpeg" class="w-auto mr-auto" alt="DJ LM&JP">
+            <img src="assets/img/About_LM_JP.jpg" class="w-auto mr-auto" alt="DJ LM&JP">
         </div>
 
         <div class="text-center my-auto mx-6 lg:mx-0 lg:ml-32">
@@ -149,8 +131,10 @@
 
             <div>
                 <div class="text-justify mb-8">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim illum quisquam quo sequi! Aut autem beatae commodi
-                    consequatur deserunt iusto modi neque repellendus? Aliquid eaque eum exercitationem hic, impedit ipsum iure praesentium quas
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim illum quisquam quo sequi! Aut
+                    autem beatae commodi
+                    consequatur deserunt iusto modi neque repellendus? Aliquid eaque eum exercitationem hic, impedit
+                    ipsum iure praesentium quas
                     quidem ratione saepe tempora, veniam.
                 </div>
 
@@ -160,7 +144,8 @@
                     </div>
 
                     <div class="flex-grow">
-                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque.</p>
+                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Facilis, itaque.</p>
                     </div>
                 </div>
 
@@ -170,7 +155,8 @@
                     </div>
 
                     <div class="flex-grow">
-                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? Ab
+                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
+                            modi quibusdam quis vitae? Ab
                             facere itaque non provident suscipit temporibus?</p>
                     </div>
                 </div>
@@ -181,14 +167,15 @@
                     </div>
 
                     <div class="flex-grow">
-                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? </p>
+                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
+                            modi quibusdam quis vitae? </p>
                     </div>
                 </div>
             </div>
 
             <div class="my-8 md:my-0 md:mt-16">
                 <a href="#contact" onclick="selectOptreden()"
-                   class="bg-blue-300 hover:bg-blue-600 hover:text-white font-bold py-2 px-4 rounded transition ease-in-out duration-300">
+                   class="bg-white border-2 text-black border-blue-700 hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded transition ease-in-out duration-300">
                     Boek nu!
                     <i class="fas fa-chevron-down ml-2 animate-bounce relative top-0.5"></i>
                 </a>
@@ -197,64 +184,64 @@
     </div>
 </section>
 
-<section id="wie3" class="min-h-screen achtergrond lg:pt-8 flex">
-    <div class="m-auto grid grid-cols-1 lg:grid-cols-2 container">
-        <div class="text-center my-auto mx-6 lg:mx-0 lg:mr-32 order-2 lg:order-1">
-            <h1 class="text-center text-4xl my-6 font-semibold">Danté</h1>
+<!--<section id="wie3" class="min-h-screen lg:pt-8 flex">-->
+<!--    <div class="m-auto grid grid-cols-1 lg:grid-cols-2 container">-->
+<!--        <div class="text-center my-auto mx-6 lg:mx-0 lg:mr-32 order-2 lg:order-1">-->
+<!--            <h1 class="text-center text-4xl my-6 font-semibold">Danté</h1>-->
 
-            <div>
-                <div class="text-justify mb-8">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim illum quisquam quo sequi! Aut autem beatae commodi
-                    consequatur deserunt iusto modi neque repellendus? Aliquid eaque eum exercitationem hic, impedit ipsum iure praesentium quas
-                    quidem ratione saepe tempora, veniam.
-                </div>
+<!--            <div>-->
+<!--                <div class="text-justify mb-8">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim illum quisquam quo sequi! Aut autem beatae commodi-->
+<!--                    consequatur deserunt iusto modi neque repellendus? Aliquid eaque eum exercitationem hic, impedit ipsum iure praesentium quas-->
+<!--                    quidem ratione saepe tempora, veniam.-->
+<!--                </div>-->
 
-                <div class="flex">
-                    <div class="flex-grow-0">
-                        <i class="fas fa-check mr-2"></i>
-                    </div>
+<!--                <div class="flex">-->
+<!--                    <div class="flex-grow-0">-->
+<!--                        <i class="fas fa-check mr-2"></i>-->
+<!--                    </div>-->
 
-                    <div class="flex-grow">
-                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque.</p>
-                    </div>
-                </div>
+<!--                    <div class="flex-grow">-->
+<!--                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                <div class="flex">
-                    <div class="flex-grow-0">
-                        <i class="fas fa-check mr-2"></i>
-                    </div>
+<!--                <div class="flex">-->
+<!--                    <div class="flex-grow-0">-->
+<!--                        <i class="fas fa-check mr-2"></i>-->
+<!--                    </div>-->
 
-                    <div class="flex-grow">
-                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? Ab
-                            facere itaque non provident suscipit temporibus?</p>
-                    </div>
-                </div>
+<!--                    <div class="flex-grow">-->
+<!--                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? Ab-->
+<!--                            facere itaque non provident suscipit temporibus?</p>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                <div class="flex">
-                    <div class="flex-grow-0">
-                        <i class="fas fa-check mr-2"></i>
-                    </div>
+<!--                <div class="flex">-->
+<!--                    <div class="flex-grow-0">-->
+<!--                        <i class="fas fa-check mr-2"></i>-->
+<!--                    </div>-->
 
-                    <div class="flex-grow">
-                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? </p>
-                    </div>
-                </div>
-            </div>
+<!--                    <div class="flex-grow">-->
+<!--                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div class="my-8 md:my-0 md:mt-16">
-                <a href="#contact" onclick="selectOptreden()"
-                   class="border-2 border-blue-500 bg-blue-100 hover:bg-blue-300 font-bold py-2 px-4 rounded transition ease-in-out duration-300">
-                    Boek nu!
-                    <i class="fas fa-chevron-down ml-2 animate-bounce relative top-0.5"></i>
-                </a>
-            </div>
-        </div>
+<!--            <div class="my-8 md:my-0 md:mt-16">-->
+<!--                <a href="#contact" onclick="selectOptreden()"-->
+<!--                   class="bg-white border-2 border-blue-700 hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded transition ease-in-out duration-300">-->
+<!--                    Boek nu!-->
+<!--                    <i class="fas fa-chevron-down ml-2 animate-bounce relative top-0.5"></i>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="mx-4 mt-8 sm:mt-0 lg:mx-0 order-1 lg:order-2">
-            <img src="assets/img/herfst.jpeg" class="w-auto ml-auto" alt="Danté">
-        </div>
-    </div>
-</section>
+<!--        <div class="mx-4 mt-8 sm:mt-0 lg:mx-0 order-1 lg:order-2">-->
+<!--            <img src="assets/img/herfst.jpeg" class="w-auto ml-auto" alt="Danté">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 <section id="contact" class="min-h-screen lg:pt-8 flex py-16 sm:py-0">
     <div class="m-auto w-11/12 md:w-3/4 lg:w-1/2 3xl:w-2/5">
@@ -275,7 +262,8 @@
             </div>
 
             <div class="mt-6">
-                <label for="email" class="text-gray-700 font-semibold">E-mail<span class="star text-red-700 ml-0.5"></span></label>
+                <label for="email" class="text-gray-700 font-semibold">E-mail<span
+                        class="star text-red-700 ml-0.5"></span></label>
                 <input type="email" id="email" name="email" value="" required
                        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"
                        placeholder="jan.janssens@telenet.be"
@@ -286,7 +274,8 @@
             </div>
 
             <div class="mt-6">
-                <label for="onderwerp" class="text-gray-700 font-semibold">Onderwerp<span class="star text-red-700 ml-0.5"></span></label>
+                <label for="onderwerp" class="text-gray-700 font-semibold">Onderwerp<span
+                        class="star text-red-700 ml-0.5"></span></label>
                 <select name="onderwerp" id="onderwerp"
                         class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200  bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out">
                     <option value="Vraag">Algemene vraag</option>
@@ -297,7 +286,8 @@
             </div>
 
             <div class="mt-6">
-                <label for="bericht" class="text-gray-700 font-semibold">Uw bericht<span class="star text-red-700 ml-0.5"></span></label>
+                <label for="bericht" class="text-gray-700 font-semibold">Uw bericht<span
+                        class="star text-red-700 ml-0.5"></span></label>
                 <textarea id="bericht" rows="3" name="bericht" required
                           class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 bg-gray-100 focus:ring-0 focus:border-blue-800 transition duration-500 ease-in-out"></textarea>
                 <div class="hidden text-red-700">
@@ -311,125 +301,119 @@
                 </div>
                 <div class="">
                     <button type="submit" id="submitForm"
-                            class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
+                            class="bg-white border-2 border-blue-700 hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded transition ease-in-out duration-300">
                         Verstuur
                     </button>
                 </div>
             </div>
         </form>
     </div>
-  <div id="modalmail" class="bg-blue-800 text-white text-center rounded-l-xl fixed top-16 right-0 transform translate-x-full w-48 p-2 transition-all duration-700">
-            <p>Je email is verstuurd!</p>
-        </div>
+    <div id="modalmail"
+         class="bg-blue-800 text-white text-center rounded-l-xl fixed top-16 right-0 transform translate-x-full w-48 p-2 transition-all duration-700">
+        <p>Je email is verstuurd!</p>
+    </div>
 </section>
 
 
-<section id="gallerij" class="min-h-screen achtergrond pt-16">
+<section id="gallerij" class="min-h-screen bg-kleur pt-16 pb-4">
     <div class="container mx-auto">
         <div class="p-3 w-full block">
-            <div class="splide mx-2 md:mx-auto">
+            <div id="video" class="splide mx-2 md:mx-auto">
                 <div class="splide__track ">
                     <ul class="splide__list">
                         <li class="splide__slide" data-splide-html-video="assets/video/trouwfeest.mp4">
-                            <img src="assets/img/herfst.jpeg" alt="Trouwfeest thumbnail">
+                            <img src="assets/img/Thumbnail_Trouwfeest.jpg    " alt="Trouwfeest thumbnail">
                         </li>
                         <li class="splide__slide" data-splide-html-video="assets/video/bedrijfsfeest.mp4">
-                            <img src="assets/img/herfst.jpeg" alt="Bedrijfsfeest thumbnail">
+                            <img src="assets/img/Thumbnail_Bedrijfsfeest.jpg" alt="Bedrijfsfeest thumbnail">
                         </li>
                         <li class="splide__slide" data-splide-html-video="assets/video/studio.mp4">
-                            <img src="assets/img/herfst.jpeg" alt="Studio thumbnail">
+                            <img src="assets/img/Thumbnail_Studio.jpg" alt="Studio thumbnail">
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <!--                nieuwe fotos-->
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pt-4 gap-4 lg:gap-0 max-w-8xl mx-auto">
-                <img src="assets/img/herfst.jpeg"
-                     class="cursor-pointer"
-                     alt="herfst"
-                     data-uitleg="test foto1"
-                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                <img src="assets/img/herfst.jpeg"
-                     class="cursor-pointer"
-                     alt="herfst"
-                     data-uitleg="test foto1"
-                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                <img src="assets/img/herfst.jpeg"
-                     class="cursor-pointer"
-                     alt="herfst"
-                     data-uitleg="test foto1"
-                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                <img src="assets/img/herfst.jpeg"
-                     class="cursor-pointer"
-                     alt="herfst"
-                     data-uitleg="test foto1"
-                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                <img src="assets/img/herfst.jpeg"
-                     class="cursor-pointer"
-                     alt="herfst"
-                     data-uitleg="test foto1"
-                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
-                <img src="assets/img/herfst.jpeg"
-                     class="cursor-pointer"
-                     alt="herfst"
-                     data-uitleg="test foto1"
-                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+            <div class="mt-24 md:mt-8">
+                <div id="galerijFoto" class="splide m-auto">
+                    <div class="splide__track pt-8">
+                        <ul class="splide__list mx-auto text-center">
+                            <li class="splide__slide">
+                                <img src="assets/img/Cover.jpg"
+                                     class="cursor-pointer"
+                                     alt="herfst"
+                                     data-uitleg="test foto1"
+                                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/Danté_Straat.jpg"
+                                     class="cursor-pointer"
+                                     alt="herfst"
+                                     data-uitleg="test foto2"
+                                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/Cover_Nummer.jpg"
+                                     class="cursor-pointer"
+                                     alt="herfst"
+                                     data-uitleg="test foto3"
+                                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/Lander_Danté.jpg"
+                                     class="cursor-pointer"
+                                     alt="herfst"
+                                     data-uitleg="test foto4"
+                                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/Galerij_LM_JP.jpg"
+                                     class="cursor-pointer"
+                                     alt="herfst"
+                                     data-uitleg="test foto5"
+                                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/LM_JP_Draaiend.jpg"
+                                     class="cursor-pointer"
+                                     alt="herfst"
+                                     data-uitleg="test foto6"
+                                     onclick="openModal(true, this.src, this.alt, this.dataset.uitleg)">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="splide__progress bg-kleur">
+                        <div class="splide__progress__bar">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="modal_overlay" onclick="openModal(false)"
-         class="z-50 hidden fixed inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-20 md:pt-10 md:pt-0">
+        <div id="modal_overlay" onclick="openModal(false)"
+             class="z-50 hidden fixed inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-20 md:pt-10 md:pt-0">
 
-        <!-- modal -->
-        <div id="modal"
-             class="opacity-0 top-1/2 transform -translate-y-1/2 lg:-translate-y-3/4 relative w-10/12 md:w-1/2 bg-white rounded shadow-lg transition-opacity transition-transform duration-900 ease-in-out">
+            <!-- modal -->
+            <div id="modal"
+                 class="opacity-0 top-2/5 transform -translate-y-1/2 lg:-translate-y-1/2 relative w-10/12 md:w-max bg-white rounded shadow-lg transition-opacity transition-transform duration-900 ease-in-out">
 
-            <!-- button close -->
-            <button
-                    onclick="openModal(false)"
-                    class="absolute -top-3 -right-3 bg-red-500 hover:bg-red-600 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
-                <i class="fas fa-times"></i>
-            </button>
+                <!-- button close -->
+                <button
+                        onclick="openModal(false)"
+                        class="absolute -top-3 -right-3 bg-red-500 hover:bg-red-600 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
+                    <i class="fas fa-times"></i>
+                </button>
 
-            <!-- body -->
-            <div class="w-full p-0 rounded-xl">
-                <img id="image" src="" alt="">
-                <p id="tekst" class="mt-4 ml-2 mb-4"></p>
+                <!-- body -->
+                <div class="w-full p-0 rounded-xl">
+                    <img id="image" src="" alt="" width="500" height="500">
+                    <p id="tekst" class="mt-4 ml-2 mb-4"></p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="streamons" class="min-h-screen lg:pt-8 flex md:hidden">
-    <div class="m-auto">
-        <div>
-            <a href="https://open.spotify.com/artist/61lcUwIR3QsClswNybUHmo" target="blank">
-                <img src="assets/img/logo_spotify_onlight.svg" alt="Logo Spotify" class="h-20 my-4 mx-auto">
-            </a>
-        </div>
-
-        <div>
-            <a href="https://music.apple.com/us/artist/l-marchal/1502021497" target="blank">
-                <img src="assets/img/logo_applemusic_onlight.svg" alt="Logo Apple Music" class="h-20 my-4 mx-auto">
-            </a>
-        </div>
-
-        <div>
-            <a href="https://www.deezer.com/nl/artist/88787692" target="blank">
-                <img src="assets/img/logo_deezer_onlight.svg" alt="Logo Deezer" class="h-20 my-4 mx-auto">
-            </a>
-        </div>
-
-        <div>
-            <a href="https://music.youtube.com/channel/UCkg--kiYrxvbC9ZfsyqBOSw" target="blank">
-                <img src="assets/img/logo_youtubemusic_onlight.svg" alt="Logo YouTube Music" class="h-20 my-4 mx-auto">
-            </a>
-        </div>
-    </div>
-</section>
-
-<footer class="border-t-4 border-blue-900 pt-2 pb-2 px-6 bg-gray-100">
+<footer class="border-t-4 border-black pt-2 pb-2 px-6 bg-gray-100">
     <div class="mx-auto font-bold text-center">
         <div>
             <a href="tel:+32 476 743 771">
@@ -452,7 +436,8 @@
             </a>
         </div>
         <div class="font-medium text-sm">
-            &copy; <span id="jaar"></span> LMSounds<span class="mx-2">&dash;</span><span>Made by <a href="https://www.kwallie.be" target="blank" class="underline">Kwallie</a></span>
+            &copy; <span id="jaar"></span> LMSounds<span class="mx-2">&dash;</span><span>Made by <a
+                href="https://www.kwallie.be" target="blank" class="underline">Kwallie</a></span>
         </div>
     </div>
 </footer>
@@ -460,7 +445,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video/dist/js/splide-extension-video.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="js/mail.js"></script>
-
 <script src="js/type.js"></script>
 <script src="js/types.js"></script>
 <script defer src="js/splide.min.js"></script>
