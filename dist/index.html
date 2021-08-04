@@ -49,6 +49,7 @@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css">
     <link rel="stylesheet" href="css/splide-extension-video.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gray-100 static">
@@ -82,13 +83,13 @@
         </a>
     </div>
 </nav>
-<section id="home" class="bg-center bg-cover bg-fixed bg-top bg-no-repeat">
+<section id="home" class="">
     <div class="container mx-auto">
         <div class="min-h-screen">
-            <div id="head" class="sticky top-1/4">
+            <div id="head" class="sticky top-2/5">
                 <div class="text-center pb-5">
                     <h1 class="text-6xl lg:text-8xl">LM&dash;Sounds</h1>
-                    <h2 class="pl-1 lg:pl-2 pt-2">Muziek voor
+                    <h2 class="pl-1 lg:pl-2 pt-2 font-semibold">Muziek voor
                         <span class="types"
                               data-types-items="trouwfeesten!, verjaardagsfeesten!, bedrijfsfeesten!, evenementen!"></span>
                     </h2>
@@ -130,17 +131,17 @@
 <!--    </div>-->
 <!--</section>-->
 
-<section id="about" class="min-h-screen lg:pt-6 flex bg-kleur text-white">
-    <div class="m-auto grid grid-cols-1 lg:grid-cols-2 container">
-        <div class="mx-4 lg:mx-0 mt-8 sm:mt-0">
+<section id="about" class="min-h-screen lg:pt-6 flex bg-kleur text-white" >
+    <div class="m-auto grid grid-cols-1 lg:grid-cols-2 container" data-aos="fade-up" data-aos-easing="linear">
+        <div class="mx-4 lg:mx-0 mt-8 sm:mt-0" >
             <img src="assets/img/About_LM_JP.jpg" class="w-auto mr-auto" alt="DJ LM&JP">
         </div>
 
-        <div class="text-center my-auto mx-6 lg:mx-0 lg:ml-32">
+        <div class="text-center my-auto mx-6 lg:mx-0 lg:ml-32" >
             <h1 class="text-center text-4xl my-6 font-semibold">DJ LM&amp;JP</h1>
 
             <div>
-                <div class="text-justify mb-8">
+                <div class="text-justify mb-8" >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim illum quisquam quo sequi! Aut
                     autem beatae commodi
                     consequatur deserunt iusto modi neque repellendus? Aliquid eaque eum exercitationem hic, impedit
@@ -183,7 +184,7 @@
                 </div>
             </div>
 
-            <div class="my-8 md:my-0 md:mt-16">
+            <div class="my-8 md:my-0 md:mt-16" >
                 <a href="#contact" onclick="selectOptreden()"
                    class="bg-white border-2 text-black border-blue-700 hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded transition ease-in-out duration-300">
                     Boek nu!
@@ -194,69 +195,10 @@
     </div>
 </section>
 
-<!--<section id="wie3" class="min-h-screen lg:pt-8 flex">-->
-<!--    <div class="m-auto grid grid-cols-1 lg:grid-cols-2 container">-->
-<!--        <div class="text-center my-auto mx-6 lg:mx-0 lg:mr-32 order-2 lg:order-1">-->
-<!--            <h1 class="text-center text-4xl my-6 font-semibold">Danté</h1>-->
-
-<!--            <div>-->
-<!--                <div class="text-justify mb-8">-->
-<!--                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim illum quisquam quo sequi! Aut autem beatae commodi-->
-<!--                    consequatur deserunt iusto modi neque repellendus? Aliquid eaque eum exercitationem hic, impedit ipsum iure praesentium quas-->
-<!--                    quidem ratione saepe tempora, veniam.-->
-<!--                </div>-->
-
-<!--                <div class="flex">-->
-<!--                    <div class="flex-grow-0">-->
-<!--                        <i class="fas fa-check mr-2"></i>-->
-<!--                    </div>-->
-
-<!--                    <div class="flex-grow">-->
-<!--                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="flex">-->
-<!--                    <div class="flex-grow-0">-->
-<!--                        <i class="fas fa-check mr-2"></i>-->
-<!--                    </div>-->
-
-<!--                    <div class="flex-grow">-->
-<!--                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? Ab-->
-<!--                            facere itaque non provident suscipit temporibus?</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="flex">-->
-<!--                    <div class="flex-grow-0">-->
-<!--                        <i class="fas fa-check mr-2"></i>-->
-<!--                    </div>-->
-
-<!--                    <div class="flex-grow">-->
-<!--                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi quibusdam quis vitae? </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            <div class="my-8 md:my-0 md:mt-16">-->
-<!--                <a href="#contact" onclick="selectOptreden()"-->
-<!--                   class="bg-white border-2 border-blue-700 hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded transition ease-in-out duration-300">-->
-<!--                    Boek nu!-->
-<!--                    <i class="fas fa-chevron-down ml-2 animate-bounce relative top-0.5"></i>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="mx-4 mt-8 sm:mt-0 lg:mx-0 order-1 lg:order-2">-->
-<!--            <img src="assets/img/herfst.jpeg" class="w-auto ml-auto" alt="Danté">-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-<section id="contact" class="min-h-screen lg:pt-8 flex py-16 sm:py-0">
-    <div class="m-auto w-11/12 md:w-3/4 lg:w-1/2 3xl:w-2/5">
+<section id="contact" class="min-h-screen lg:pt-8 flex py-16 sm:py-0 bg-kleur" >
+    <div class="m-auto w-11/12 md:w-3/4 lg:w-1/2 3xl:w-2/5" data-aos="fade-up" data-aos-easing="linear">
         <form id="form"
-              class="m-auto p-8 rounded-2xl shadow-2xl bg-gray-100">
+              class="m-auto p-8 rounded-xl shadow-2xl bg-gray-100">
             <div>
                 <h2 class="text-center text-3xl font-semibold">Contact</h2>
             </div>
@@ -328,7 +270,7 @@
 <section id="gallerij" class="min-h-screen bg-kleur pt-16 pb-4">
     <div class="container mx-auto">
         <div class="p-3 w-full block">
-            <div id="video" class="splide mx-2 md:mx-auto">
+            <div id="video" class="splide mx-2 md:mx-auto" data-aos="fade-up" data-aos-easing="linear">
                 <div class="splide__track ">
                     <ul class="splide__list">
                         <li class="splide__slide" data-splide-html-video="assets/video/trouwfeest.mp4">
@@ -344,7 +286,7 @@
                 </div>
             </div>
 
-            <div class="mt-24 md:mt-8">
+            <div class="mt-24 md:mt-8" data-aos="fade-up" data-aos-easing="linear">
                 <div id="galerijFoto" class="splide m-auto">
                     <div class="splide__track pt-8">
                         <ul class="splide__list mx-auto text-center">
@@ -460,6 +402,7 @@
 <script defer src="js/splide.min.js"></script>
 <script defer src="js/slider.js"></script>
 <script defer src="js/modal.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
     function navToggle() {
@@ -499,6 +442,11 @@
     for (i = 0; i < labels.length; i++) {
         labels[i].innerHTML += "&ast;"
     }
+
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 600
+    });
 </script>
 </body>
 </html>
