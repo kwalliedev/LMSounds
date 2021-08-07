@@ -23,6 +23,7 @@ module.exports = {
             },
             backgroundImage: theme => ({
                 'home': "url('../assets/img/Home.jpg')",
+                'contact': "url('../assets/img/draaiend.jpg')",
             }),
             maxWidth: {
                 '8xl': '85rem'
