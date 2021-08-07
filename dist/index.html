@@ -44,6 +44,11 @@
     <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet"
@@ -88,8 +93,8 @@
         <div class="min-h-screen">
             <div id="head" class="sticky top-2/5">
                 <div class="text-center pb-5">
-                    <h1 class="text-6xl lg:text-8xl">LM&dash;Sounds</h1>
-                    <h2 class="pl-1 lg:pl-2 pt-2 font-semibold">Muziek voor
+                    <h1 class="text-6xl lg:text-8xl font-semibold">LM&dash;Sounds</h1>
+                    <h2 class="pl-1 lg:pl-2 pt-2 font-medium text-2xl">DJ LM&amp;JP voor
                         <span class="types"
                               data-types-items="trouwfeesten!, verjaardagsfeesten!, bedrijfsfeesten!, evenementen!"></span>
                     </h2>
@@ -131,22 +136,21 @@
 <!--    </div>-->
 <!--</section>-->
 
-<section id="about" class="min-h-screen lg:pt-6 flex bg-kleur text-white" >
+<section id="about" class="min-h-screen lg:pt-6 flex bg-kleur text-white">
     <div class="m-auto grid grid-cols-1 lg:grid-cols-2 container" data-aos="fade-up" data-aos-easing="linear">
-        <div class="mx-4 lg:mx-0 mt-8 sm:mt-0" >
+        <div class="mx-4 lg:mx-0 mt-8 sm:mt-0">
             <img src="assets/img/About_LM_JP.jpg" class="w-auto mr-auto" alt="DJ LM&JP">
         </div>
 
-        <div class="text-center my-auto mx-6 lg:mx-0 lg:ml-32" >
+        <div class="text-center my-auto mx-6 lg:mx-0 lg:ml-32">
             <h1 class="text-center text-4xl my-6 font-semibold">DJ LM&amp;JP</h1>
 
             <div>
-                <div class="text-justify mb-8" >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim illum quisquam quo sequi! Aut
-                    autem beatae commodi
-                    consequatur deserunt iusto modi neque repellendus? Aliquid eaque eum exercitationem hic, impedit
-                    ipsum iure praesentium quas
-                    quidem ratione saepe tempora, veniam.
+                <div class="text-justify mb-8">
+                    Met DJ LM&JP is ambiance verzekerd met de gewenste muziek op uw feest. Wij zijn gespecialiseerd in
+                    trouwfeesten, verjaardagsfeesten en bedrijfsfeesten. Alle muziekgenres kunnen de revue passeren
+                    gaande van 60's, 70's, 80's en 90's tot hedendaagse muziek.
+
                 </div>
 
                 <div class="flex">
@@ -155,20 +159,7 @@
                     </div>
 
                     <div class="flex-grow">
-                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Facilis, itaque.</p>
-                    </div>
-                </div>
-
-                <div class="flex">
-                    <div class="flex-grow-0">
-                        <i class="fas fa-check mr-2"></i>
-                    </div>
-
-                    <div class="flex-grow">
-                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
-                            modi quibusdam quis vitae? Ab
-                            facere itaque non provident suscipit temporibus?</p>
+                        <p class="flex-auto text-left">Bedrijfsfeesten</p>
                     </div>
                 </div>
 
@@ -178,13 +169,31 @@
                     </div>
 
                     <div class="flex-grow">
-                        <p class="flex-auto text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
-                            modi quibusdam quis vitae? </p>
+                        <p class="flex-auto text-left">Trouwfeesten</p>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex-grow-0">
+                        <i class="fas fa-check mr-2"></i>
+                    </div>
+
+                    <div class="flex-grow">
+                        <p class="flex-auto text-left">Verjaardagsfeesten</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-grow-0">
+                        <i class="fas fa-check mr-2"></i>
+                    </div>
+
+                    <div class="flex-grow">
+                        <p class="flex-auto text-left">€350 inclusief muziekinstallaties en licht!</p>
                     </div>
                 </div>
             </div>
 
-            <div class="my-8 md:my-0 md:mt-16" >
+            <div class="my-8 md:my-0 md:mt-16">
                 <a href="#contact" onclick="selectOptreden()"
                    class="bg-white border-2 text-black border-blue-700 hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded transition ease-in-out duration-300">
                     Boek nu!
@@ -195,7 +204,7 @@
     </div>
 </section>
 
-<section id="contact" class="min-h-screen lg:pt-8 flex py-16 sm:py-0 bg-kleur" >
+<section id="contact" class="min-h-screen lg:pt-8 flex py-16 sm:py-0 bg-contact bg-cover bg-scroll">
     <div class="m-auto w-11/12 md:w-3/4 lg:w-1/2 3xl:w-2/5" data-aos="fade-up" data-aos-easing="linear">
         <form id="form"
               class="m-auto p-8 rounded-xl shadow-2xl bg-gray-100">
@@ -384,11 +393,11 @@
             </span>
             <a href="https://www.google.com/maps/place/Vogelzang+5,+2200+Herentals/@51.1807271,4.8075108,17z/data=!3m1!4b1!4m5!3m4!1s0x47c153c948ddb4d5:0x7556dabcc87cdf80!8m2!3d51.1807238!4d4.8096995"
                target="_blank">
-                <i class="fas fa-map-marked-alt mr-2"></i>Vogelzang 5 2200 Herentals
+                <i class="fas fa-map-marked-alt mr-2"></i>2200 Herentals
             </a>
         </div>
         <div class="font-medium text-sm">
-            &copy; <span id="jaar"></span> LMSounds<span class="mx-2">&dash;</span><span>Made by <a
+            &copy; <span id="jaar"></span> LM&dash;Sounds<span class="mx-2">&dash;</span><span>Made by <a
                 href="https://www.kwallie.be" target="blank" class="underline">Kwallie</a></span>
         </div>
     </div>
