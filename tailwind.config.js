@@ -35,6 +35,10 @@ module.exports = {
                 '2/5': '40%'
             },
         },
+        fontFamily: {
+            'titel': ['"STIX Two Text"', 'serif'],
+            'body': ['Poppins', 'sans-serif']
+        }
     },
     variants: {
         extend: {
